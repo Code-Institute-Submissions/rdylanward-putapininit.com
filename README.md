@@ -1,4 +1,4 @@
-<h1 align="center">MS1 Project - Put a Pin In It</h1>
+<h1 align="center">MS2 Project - Put a Pin In It</h1>
 
 [View the live project here.](https://rdylanward.github.io/putapininit.com/index.html)
 
