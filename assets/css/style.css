@@ -3,7 +3,7 @@
 /**********************************-***********************************/
 
 
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Waiting+for+the+Sunrise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Architects+Daughter&family=Waiting+for+the+Sunrise&display=swap');
 
 
 /**********************************************************************/
@@ -18,7 +18,7 @@ html {
 body {
     margin: 0rem;
     padding: 0rem;
-    font-family: 'Waiting for the Sunrise', sans-serif;
+    font-family: 'Architects Daughter', sans-serif;
     font-weight: 400;
     background-color: #f2f0e5;
 }
@@ -81,12 +81,10 @@ body {
     grid-template-columns: 100%;
     grid-template-areas:
         "header"
-        "details"
-        "hero"
-        "member"
-        "testimonial"
+        "about"
+        "destinations"
         "footer";
-    grid-template-rows: repeat(6, min-content);
+    grid-template-rows: repeat(4, min-content);
     background-color: #f2f0e5;
     width: 100%;
     top: 0;
@@ -98,6 +96,8 @@ body {
     background-image: linear-gradient(rgba(12, 18, 44, 0.8), rgba(12, 18, 44, 0.8)), url("../img/fitness-center.jpg");
     background-size: cover;
     background-position: center;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 400;
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
@@ -177,8 +177,8 @@ body {
 }
 
 .btn {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-family: 'Architects Daughter', sans-serif;
+    font-weight: 700;
     width: 18rem;
     height: 4rem;
     transition: all 0.3s;
