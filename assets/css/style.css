@@ -144,7 +144,7 @@ body {
 
 .container-footer {
     width: 100%;
-    background: #0c122c;
+    background: #ffa688;
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas:
@@ -188,18 +188,6 @@ body {
     color: #ffca88;
 }
 
-.font-light {
-    color: #f2f0e5;
-}
-
-.font-yellow {
-    color: #beb580;
-}
-
-.font-dark {
-    color: #0c122c;
-}
-
 .btn {
     font-family: 'Architects Daughter', sans-serif;
     font-weight: 700;
@@ -209,22 +197,22 @@ body {
 }
 
 .btn-flat-light {
-    font-size: 1.5rem;
-    background: #beb580;
-    color: #15313a;
-    border: 0.3rem solid #beb580;
+    font-size: 1.6rem;
+    background: #fff2cc;
+    color: #ffa688;
+    border: 0.3rem solid #fff2cc;
     border-radius: 0.7rem;
     transition: all 0.25s;
 }
 
 .btn-flat-light:hover {
-    background: transparent;
-    color: #beb580;
+    background: #ffe9aa;
+    border: 0.3rem solid #ffe9aa;
     transition: all 0.3s;
 }
 
 .btn-flat-light:active {
-    background: #beb580;
+    background: transparent;
     transition: all 0.3s;
 }
 
@@ -587,18 +575,18 @@ body {
 .footer-menu-item {
     list-style: none;
     font-size: 1.7rem;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 0.6rem;
 }
 
 .footer-menu-link:hover {
-    color: #f2f0e5;
+    color: #ffd459;
     transition: color 0.25s;
 }
 
 .footer-menu-link:active {
-    color: rgba(242, 240, 229, 0.6);
+    color: rgba(255, 212, 89, 0.6);
     transition: color 0.25s;
 }
 
@@ -636,17 +624,16 @@ body {
 }
 
 .footer-social-icon {
-    color: #beb580;
     transition: color 0.25s;
 }
 
 .footer-social-icon:hover {
-    color: #f2f0e5;
+    color: #ffd459;
     transition: color 0.25s;
 }
 
 .footer-social-icon:active {
-    color: rgba(242, 240, 229, 0.6);
+    color: rgba(255, 212, 89, 0.6);
     transition: color 0.25s;
 }
 
@@ -681,34 +668,14 @@ body {
 .footer-input-email {
     font-size: 1.4rem;
     background-color: transparent;
-    border: 0.3rem solid #beb580;
+    border: 0.3rem solid #fff2cc;
     width: 22rem;
     height: 2.4rem;
     border-radius: 0.7rem 0rem 0rem 0.7rem;
 }
 
-.footer-input-email::-webkit-input-placeholder {
-    color: rgba(190, 181, 128, 0.7);
-    padding: 0rem 0.6rem;
-}
-
-.footer-input-email::-moz-placeholder {
-    color: rgba(190, 181, 128, 0.7);
-    padding: 0rem 0.6rem;
-}
-
-.footer-input-email:-ms-input-placeholder {
-    color: rgba(190, 181, 128, 0.7);
-    padding: 0rem 0.6rem;
-}
-
-.footer-input-email::-ms-input-placeholder {
-    color: rgba(190, 181, 128, 0.7);
-    padding: 0rem 0.6rem;
-}
-
 .footer-input-email::placeholder {
-    color: rgba(190, 181, 128, 0.7);
+    color: rgba(255, 242, 204, 0.7);
     padding: 0rem 0.6rem;
 }
 
@@ -759,8 +726,8 @@ body {
 }
 
 .footer-end-items {
-    font-size: 1.3rem;
-    font-weight: 400;
+    font-size: 1.4rem;
+    font-weight: 700;
     list-style: none;
 }
 
@@ -771,6 +738,7 @@ body {
 }
 
 .footer-copyright-text {
+    font-size: 1.2rem;
     margin-bottom: 1.7rem;
 }
 
