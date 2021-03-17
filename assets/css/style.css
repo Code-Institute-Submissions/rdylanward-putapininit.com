@@ -190,18 +190,18 @@ body {
 
 .btn {
     font-family: 'Architects Daughter', sans-serif;
+    font-size: 1.7rem;
     font-weight: 700;
+    border-radius: 0.7rem;
     width: 18rem;
     height: 4rem;
     transition: all 0.3s;
 }
 
 .btn-flat-light {
-    font-size: 1.6rem;
     background: #fff2cc;
     color: #ff8d66;
     border: 0.3rem solid #fff2cc;
-    border-radius: 0.7rem;
     transition: all 0.25s;
 }
 
@@ -216,23 +216,44 @@ body {
     transition: all 0.3s;
 }
 
-.btn-flat-dark {
-    font-size: 1.5rem;
-    background: #967858;
-    color: #f2f0e5;
-    border: 0.3rem solid #967858;
-    border-radius: 0.7rem;
+.btn-flat-orange {
+    background: #ffb659;
+    color: #fff2cc;
+    border: 0.3rem solid #ffb659;
     transition: all 0.25s;
 }
 
-.btn-flat-dark:hover {
-    background: transparent;
-    color: #967858;
+.btn-flat-orange:hover {
+    background: #fff2cc;
+    color: #ffb659;
+    border: 0.3rem solid #fff2cc;
     transition: all 0.3s;
 }
 
-.btn-flat-dark:active {
-    background: #967858;
+.btn-flat-orange:active {
+    background: #ff9003;
+    color: #fff2cc;
+    transition: all 0.3s;
+}
+
+.btn-flat-green {
+    background: #51e89f;
+    color: #00b15c;
+    border: 0.3rem solid #51e89f;
+    transition: all 0.25s;
+}
+
+.btn-flat-green:hover {
+    background: #80f0ba;
+    color: #03d872;
+    border: 0.3rem solid #80f0ba;
+    transition: all 0.3s;
+}
+
+.btn-flat-green:active {
+    background: #00b15c;
+    color: #51e89f;
+    border: 0.3rem solid #00b15c;
     transition: all 0.3s;
 }
 
