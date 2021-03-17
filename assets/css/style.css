@@ -218,21 +218,21 @@ body {
 
 .btn-flat-orange {
     background: #ffb659;
-    color: #fff2cc;
+    color: #ffe9aa;
     border: 0.3rem solid #ffb659;
     transition: all 0.25s;
 }
 
 .btn-flat-orange:hover {
-    background: #fff2cc;
+    background: #ffe9aa;
     color: #ffb659;
-    border: 0.3rem solid #fff2cc;
+    border: 0.3rem solid #ffe9aa;
     transition: all 0.3s;
 }
 
 .btn-flat-orange:active {
     background: #ff9003;
-    color: #fff2cc;
+    color: #ffe9aa;
     transition: all 0.3s;
 }
 
