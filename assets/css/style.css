@@ -144,7 +144,7 @@ body {
 
 .container-footer {
     width: 100%;
-    background: #ffa688;
+    background: #ff8d66;
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas:
@@ -199,7 +199,7 @@ body {
 .btn-flat-light {
     font-size: 1.6rem;
     background: #fff2cc;
-    color: #ffa688;
+    color: #ff8d66;
     border: 0.3rem solid #fff2cc;
     border-radius: 0.7rem;
     transition: all 0.25s;
