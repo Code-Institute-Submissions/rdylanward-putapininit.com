@@ -94,7 +94,7 @@ body {
 
 .container-header {
     grid-area: header;
-    background-image: linear-gradient(rgba(12, 18, 44, 0.8), rgba(12, 18, 44, 0.8)), url("../img/flatlay-of-travel-essentials.jpg");
+    background-image: linear-gradient(rgba(133, 196, 237, 0.8), rgba(133, 196, 237, 0.8)), url("../img/flatlay-of-travel-essentials.jpg");
     background-size: cover;
     background-position: center;
     font-family: 'Amatic SC', sans-serif;
@@ -115,7 +115,14 @@ body {
 
 .container-about {
     grid-area: about;
-    margin: 1rem 0rem 5rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template:
+        "about-img"
+        "about-txt"
+        "about-btn";
+    grid-template-rows: repeat(3, max-content);
+    margin: 5rem 0rem;
 }
 
 .container-destinations {
@@ -163,15 +170,19 @@ body {
 }
 
 .dark-blue {
-    color: #07507f;
+    color: #0665a2;
 }
 
 .light-yellow {
-    color: #ffe67f;
+    color: #ffe088;
 }
 
 .medium-light-yellow {
-    color: #ffdd53;
+    color: #ffd459;
+}
+
+.light-orange {
+    color: #ffca88;
 }
 
 .font-light {
@@ -186,24 +197,12 @@ body {
     color: #0c122c;
 }
 
-.font-green {
-    color: #15313a;
-}
-
 .btn {
     font-family: 'Architects Daughter', sans-serif;
     font-weight: 700;
     width: 18rem;
     height: 4rem;
     transition: all 0.3s;
-}
-
-.btn-flat {
-    font-size: 1.5rem;
-    background: #beb580;
-    border: 0.3rem solid #beb580;
-    border-radius: 0.7rem;
-    transition: all 0.25s;
 }
 
 .btn-flat-light {
@@ -223,26 +222,6 @@ body {
 
 .btn-flat-light:active {
     background: #beb580;
-    transition: all 0.3s;
-}
-
-.btn-flat-header {
-    font-size: 1.6rem;
-    background: #5f808b;
-    color: #15313a;
-    border: 0.3rem solid #5f808b;
-    border-radius: 0.7rem;
-    transition: all 0.25s;
-}
-
-.btn-flat-header:hover {
-    background: transparent;
-    color: #5f808b;
-    transition: all 0.3s;
-}
-
-.btn-flat-header:active {
-    background: #5f808b;
     transition: all 0.3s;
 }
 
@@ -332,10 +311,6 @@ body {
 /***                             Navbar                             ***/
 /**********************************-***********************************/
 
-.container-navbar a {
-    color: #beb580;
-}
-
 .sticky-navbar {
     top: 0;
     background: #5c6381;
@@ -394,7 +369,7 @@ body {
 
 .navbar-menu-link {
     font-size: 1.7rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .navbar-menu-link:hover {
@@ -553,6 +528,46 @@ body {
 .header-hero-btn {
     justify-self: center;
     margin-bottom: 0.9rem;
+    transition: background 0.25s;
+}
+
+
+/**********************************************************************/
+/***                           About Us                             ***/
+/**********************************-***********************************/
+
+.about-image {
+    grid-area: about-img;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "heading"
+        "inspire"
+        "buttons";
+    grid-template-rows: repeat(3, 33%);
+    place-self: center center;
+    margin-bottom: 2rem;
+}
+
+.about-image img {
+    width: 345px;
+    height: 517.5px;
+}
+
+.about-description {
+    grid-area: about-txt;
+}
+
+.about-description p {
+    font-size: 1.6rem;
+    text-align: justify;
+    margin: 1rem 2rem;
+}
+
+.about-button {
+    grid-area: about-btn;
+    justify-self: center;
+    margin-top: 2rem;
     transition: background 0.25s;
 }
 
