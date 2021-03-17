@@ -20,7 +20,7 @@ body {
     padding: 0rem;
     font-family: 'Architects Daughter', sans-serif;
     font-weight: 400;
-    background-color: #f2f0e5;
+    background-color: #fffbee;
 }
 
 .container-modal-email,
@@ -51,7 +51,6 @@ body {
         ". brand title menu .";
     grid-template-rows: 6.5rem;
     background: transparent;
-    color: #beb580;
     width: 100%;
     padding: 0rem;
     margin: 0rem;
@@ -66,7 +65,7 @@ body {
     grid-template-areas:
         ". menu .";
     grid-template-rows: max-content;
-    background-color: rgba(26, 33, 63, 0.9);
+    background-color: rgba(15, 133, 209, 0.9);
     color: #0c122c;
     width: 100%;
     top: 6.5rem;
@@ -94,7 +93,7 @@ body {
 
 .container-header {
     grid-area: header;
-    background-image: linear-gradient(rgba(133, 196, 237, 0.8), rgba(133, 196, 237, 0.8)), url("../img/flatlay-of-travel-essentials.jpg");
+    background-image: linear-gradient(rgba(133, 196, 237, 0.85), rgba(133, 196, 237, 0.85)), url("../img/flatlay-of-travel-essentials.jpg");
     background-size: cover;
     background-position: center;
     font-family: 'Amatic SC', sans-serif;
@@ -116,18 +115,18 @@ body {
 .container-about {
     grid-area: about;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 5% 90% 5%;
     grid-template:
-        "about-img"
-        "about-txt"
-        "about-btn";
+        ". about-img ."
+        ". about-txt ."
+        ". about-btn .";
     grid-template-rows: repeat(3, max-content);
     margin: 5rem 0rem;
 }
 
 .container-destinations {
     grid-area: destinations;
-    background-image: linear-gradient(rgba(12, 18, 44, 0.8), rgba(12, 18, 44, 0.8)), url("../img/kicking-workout.jpg");
+    background-image: linear-gradient(rgba(133, 196, 237, 0.85), rgba(133, 196, 237, 0.85)), url("../img/travel-flatlay.jpg");
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -174,10 +173,14 @@ body {
 }
 
 .light-yellow {
-    color: #ffe088;
+    color: #fff2cc; /* #ffe088;*/
 }
 
 .medium-light-yellow {
+    color: #ffe9aa;
+}
+
+.medium-yellow {
     color: #ffd459;
 }
 
@@ -313,13 +316,13 @@ body {
 
 .sticky-navbar {
     top: 0;
-    background: #5c6381;
-    color: #beb580;
+    background: rgba(88, 172, 227, 0.9);
+    color: #fff2cc; /* #ffe088;*/
     transition: all 0.3s;
 }
 
 .sticky-navbar a {
-    color: #beb580;
+    color: #fff2cc; /* #ffe088;*/
 }
 
 .navbar-brand {
@@ -373,12 +376,12 @@ body {
 }
 
 .navbar-menu-link:hover {
-    color: #ffe67f;
+    color: #ffd459;
     transition: color 0.25s;
 }
 
 .navbar-menu-link:active {
-    color: rgba(245, 246, 244, 0.6);
+    color: rgba(255, 212, 89, 0.6);
     transition: color 0.25s;
 }
 
@@ -393,12 +396,7 @@ body {
 /***                         Mobile Navbar                          ***/
 /**********************************-***********************************/
 
-.container-navbar-mobile a {
-    color: #bea080;
-}
-
 .sticky-navbar-mobile {
-    color: #0c122c;
     transition: all 0.255s cubic-bezier(1, 0, 0, 1);
 }
 
@@ -425,11 +423,11 @@ body {
 }
 
 .navbar-mobile-link:hover {
-    color: #f2f0e5
+    color: #ffd459;
 }
 
 .navbar-mobile-link:active {
-    color: rgba(245, 246, 244, 0.6);
+    color: rgba(255, 212, 89, 0.6);
     transition: color 0.255s cubic-bezier(1, 0, 0, 1);
 }
 
@@ -456,15 +454,13 @@ body {
 
 .header-hero-heading h1 {
     font-size: 456%;
-    font-weight: 500;
-    color: #f2f0e5;
+    font-weight: 700;
     text-align: center;
     margin: 1.7rem;
 }
 
 .header-hero-inspiration {
     grid-area: inspire;
-    color: #f2f0e5;
     justify-self: center;
     align-self: center;
     margin-bottom: 1.3rem;
@@ -476,7 +472,7 @@ body {
 
 .header-hero-inspiration blockquote {
     font-size: 3.0rem;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
     justify-self: center;
     margin: 0rem 0rem;
@@ -493,7 +489,7 @@ body {
 
 .header-hero-inspiration figcaption {
     font-size: 2.5rem;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
     margin: 0.9rem 0rem;
 }
