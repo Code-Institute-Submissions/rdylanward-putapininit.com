@@ -130,22 +130,22 @@ body {
     background-image: linear-gradient(rgba(133, 196, 237, 0.85), rgba(133, 196, 237, 0.85)), url("../img/travel-flatlay.jpg");
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 75vh;
     background-attachment: fixed;
     top: 0rem;
     left: 0rem;
     display: grid;
     grid-template-columns: 5% 90% 5%;
     grid-template-areas:
-        ". . ."
-        ". quote ."
-        ". . .";
-    grid-template-rows: 14% 72% 14%;
+        ". dest-hdr ."
+        ". dest-txt ."
+        ". dest-btn .";
+    grid-template-rows: 27% 50% 23%;
 }
 
 .container-footer {
     width: 100%;
-    background: #ff8d66;
+    background: rgba(255, 141, 102, 0.9);
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas:
@@ -549,8 +549,8 @@ body {
 }
 
 .about-image img {
-    width: 345px;
-    height: 517.67px;
+    width: 340px;
+    height: 510.17px;
 }
 
 .about-title {
@@ -559,7 +559,7 @@ body {
 }
 
 .about-title h1 {
-    font-size: 2rem;
+    font-size: 2.7rem;
     font-weight: 700;
 }
 
@@ -568,9 +568,9 @@ body {
 }
 
 .about-description p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: justify;
-    margin: 1rem 2rem;
+    margin: 1rem 3rem 1.3rem 3rem;
 }
 
 .about-button {
@@ -578,6 +578,45 @@ body {
     justify-self: center;
     margin-top: 2rem;
     transition: background 0.25s;
+}
+
+
+/**********************************************************************/
+/***                          Destinations                          ***/
+/**********************************-***********************************/
+
+.destinations-title {
+    grid-area: dest-hdr;
+    place-self: end center;
+}
+
+.destinations-title h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.destinations-description {
+    grid-area: dest-txt;
+    place-self: center center;
+}
+
+.destinations-description p {
+    font-size: 1.8rem;
+    text-align: justify;
+    margin: 3rem 1rem;
+}
+
+.destinations-button {
+    grid-area: dest-btn;
+    place-self: start center;
+}
+
+.destinations-btn {
+    width: 24rem;
+    transition: background 0.25s;
+    margin-top: 1.5rem;
 }
 
 
