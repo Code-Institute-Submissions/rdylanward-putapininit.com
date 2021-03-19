@@ -118,9 +118,10 @@ body {
     grid-template-columns: 5% 90% 5%;
     grid-template:
         ". about-img ."
+        ". about-hdr ."
         ". about-txt ."
         ". about-btn .";
-    grid-template-rows: repeat(3, max-content);
+    grid-template-rows: repeat(4, max-content);
     margin: 5rem 0rem;
 }
 
@@ -543,20 +544,23 @@ body {
 
 .about-image {
     grid-area: about-img;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "heading"
-        "inspire"
-        "buttons";
-    grid-template-rows: repeat(3, 33%);
     place-self: center center;
     margin-bottom: 2rem;
 }
 
 .about-image img {
     width: 345px;
-    height: 517.5px;
+    height: 517.67px;
+}
+
+.about-title {
+    grid-area: about-hdr;
+    place-self: center center;
+}
+
+.about-title h1 {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .about-description {
