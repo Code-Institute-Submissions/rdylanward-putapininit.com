@@ -985,6 +985,19 @@ body {
         grid-template-rows: 20% repeat(3, 20%) 20%;
     }
 
+    .container-about {
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    .container-destinations {
+        grid-template-columns: 10% 80% 10%;
+        height: 40vh;
+    }
+
+    .container-footer {
+        grid-template-columns: 22.5% 55% 22.5%;
+    }
+
     /***********************/
     /****  Email Modal  ****/
     /***********************/
@@ -1035,6 +1048,18 @@ body {
 
     .header-hero-btn {
         margin: 0rem;
+    }
+
+    /**********************/
+    /***  DESTINATIONS  ***/
+    /**********************/
+
+    .destinations-title h1 {
+        margin: 0rem ;
+    }
+
+    .destinations-btn {
+        margin-top: 0rem;
     }
 }
 /****  /screen and (min-width: 768px)  ****/
