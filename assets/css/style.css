@@ -116,7 +116,7 @@ body {
     grid-area: about;
     display: grid;
     grid-template-columns: 5% 90% 5%;
-    grid-template:
+    grid-template-areas:
         ". about-img ."
         ". about-hdr ."
         ". about-txt ."
@@ -570,7 +570,7 @@ body {
 .about-description p {
     font-size: 1.8rem;
     text-align: justify;
-    margin: 1rem 3rem 1.3rem 3rem;
+    margin: 1rem 1rem 1.3rem 1rem;
 }
 
 .about-button {
@@ -892,8 +892,8 @@ body {
     /***************/
 
     .about-image img {
-        width: 300px;
-        height: 450.15px;
+        width: 290px;
+        height: 435.15px;
     }
 
     .about-title h1 {
@@ -901,7 +901,7 @@ body {
     }
 
     .about-description p {
-        margin: 1rem 2.5rem 1.3rem 2.5rem;
+        margin: 1rem 1rem 1.3rem 1rem;
     }
 
     /****************/
@@ -913,7 +913,7 @@ body {
     }
 
     .footer-input-email {
-        width: 14rem;
+        width: 19rem;
         height: 2.4rem;
     }
 }
@@ -1078,6 +1078,20 @@ body {
         grid-template-rows: 30% 40% 30%;
     }
 
+    .container-about {
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-areas:
+            ". about-img about-hdr ."
+            ". about-img about-txt ."
+            ". about-img about-btn .";
+        grid-template-rows: 10% 80% 10%;
+    }
+
+    .container-destinations {
+        grid-template-columns: 15% 70% 15%;
+        height: 40vh;
+    }
+
     /*****************************/
     /***  Reusable Components  ***/
     /*****************************/
@@ -1111,6 +1125,28 @@ body {
     .btn-3 {
         display: grid;
         align-items: center;
+    }
+
+    /***************/
+    /***  ABOUT  ***/
+    /***************/
+
+    .about-image {
+        place-self: center start;
+        margin: 0rem;
+    }
+
+    .about-description {
+        align-self: center;
+    }
+
+    .about-description p {
+        margin: 1rem 0rem;
+    }
+
+    .about-button {
+        align-self: center;
+        margin-top: 0rem;
     }
 }
 /****  /screen and (min-width: 1024px)  ****/
