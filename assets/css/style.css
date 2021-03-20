@@ -1148,6 +1148,18 @@ body {
         align-self: center;
         margin-top: 0rem;
     }
+
+    /**********************/
+    /***  DESTINATIONS  ***/
+    /**********************/
+
+    .destinations-title h1 {
+        font-size: 3.2rem;
+    }
+
+    .destinations-description p {
+        font-size: 2.2rem;
+    }
 }
 /****  /screen and (min-width: 1024px)  ****/
 
