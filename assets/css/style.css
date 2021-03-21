@@ -90,31 +90,11 @@
     transition: all 0.3s;
 }
 
-.btn-flat-green {
-    background: #51e89f;
-    color: #00b15c;
-    border: 0.3rem solid #51e89f;
-    transition: all 0.25s;
-}
-
-.btn-flat-green:hover {
-    background: #80f0ba;
-    color: #03d872;
-    border: 0.3rem solid #80f0ba;
-    transition: all 0.3s;
-}
-
-.btn-flat-green:active {
-    background: #00b15c;
-    color: #51e89f;
-    border: 0.3rem solid #00b15c;
-    transition: all 0.3s;
-}
-
 .ripple {
     position: absolute;
     width: 100%;
     height: 100%;
+    background-color: ;
 }
 
 .hide-menu {
