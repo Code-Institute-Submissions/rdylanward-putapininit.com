@@ -7,6 +7,126 @@
 
 
 /**********************************************************************/
+/***                      Reusable Components                       ***/
+/**********************************-***********************************/
+
+.disabled {
+    display: none;
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.dark-blue {
+    color: #0665a2;
+}
+
+.light-yellow {
+    color: #fff2cc; /* #ffe088;*/
+}
+
+.medium-light-yellow {
+    color: #ffe9aa;
+}
+
+.medium-yellow {
+    color: #ffd459;
+}
+
+.light-orange {
+    color: #ffca88;
+}
+
+.btn {
+    font-family: 'Architects Daughter', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    border-radius: 0.7rem;
+    width: 18rem;
+    height: 4rem;
+    transition: all 0.3s;
+}
+
+.btn-flat-light {
+    background: #fff2cc;
+    color: #ff8d66;
+    border: 0.3rem solid #fff2cc;
+    transition: all 0.25s;
+}
+
+.btn-flat-light:hover {
+    background: #ffe9aa;
+    border: 0.3rem solid #ffe9aa;
+    transition: all 0.3s;
+}
+
+.btn-flat-light:active {
+    background: transparent;
+    transition: all 0.3s;
+}
+
+.btn-flat-orange {
+    background: #ffb659;
+    color: #ffe9aa;
+    border: 0.3rem solid #ffb659;
+    transition: all 0.25s;
+}
+
+.btn-flat-orange:hover {
+    background: #ffe9aa;
+    color: #ffb659;
+    border: 0.3rem solid #ffe9aa;
+    transition: all 0.3s;
+}
+
+.btn-flat-orange:active {
+    background: #ff9003;
+    color: #ffe9aa;
+    transition: all 0.3s;
+}
+
+.btn-flat-green {
+    background: #51e89f;
+    color: #00b15c;
+    border: 0.3rem solid #51e89f;
+    transition: all 0.25s;
+}
+
+.btn-flat-green:hover {
+    background: #80f0ba;
+    color: #03d872;
+    border: 0.3rem solid #80f0ba;
+    transition: all 0.3s;
+}
+
+.btn-flat-green:active {
+    background: #00b15c;
+    color: #51e89f;
+    border: 0.3rem solid #00b15c;
+    transition: all 0.3s;
+}
+
+.ripple {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hide-menu {
+    display: none;
+}
+
+.hide-toggler {
+    display: grid;
+}
+
+
+/**********************************************************************/
 /***                          Basic Setup                           ***/
 /**********************************-***********************************/
 
@@ -20,7 +140,6 @@ body {
     padding: 0rem;
     font-family: 'Architects Daughter', sans-serif;
     font-weight: 400;
-    background-color: #fffbee;
 }
 
 .container-modal-email,
@@ -114,6 +233,7 @@ body {
 
 .container-about {
     grid-area: about;
+    background: rgba(128, 240, 186, 0.3);
     display: grid;
     grid-template-columns: 5% 90% 5%;
     grid-template-areas:
@@ -122,7 +242,7 @@ body {
         ". about-txt ."
         ". about-btn .";
     grid-template-rows: repeat(4, max-content);
-    margin: 5rem 0rem;
+    padding: 5rem 0rem;
 }
 
 .container-destinations {
@@ -145,7 +265,7 @@ body {
 
 .container-footer {
     width: 100%;
-    background: rgba(255, 141, 102, 0.9);
+    background: rgba(255, 141, 102, 0.85);
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas:
@@ -154,116 +274,6 @@ body {
         "end"
         "copy";
     grid-template-rows: repeat(5, max-content);
-}
-
-
-/**********************************************************************/
-/***                      Reusable Components                       ***/
-/**********************************-***********************************/
-
-.disabled {
-    display: none;
-}
-
-.no-decoration {
-    text-decoration: none;
-}
-
-.dark-blue {
-    color: #0665a2;
-}
-
-.light-yellow {
-    color: #fff2cc; /* #ffe088;*/
-}
-
-.medium-light-yellow {
-    color: #ffe9aa;
-}
-
-.medium-yellow {
-    color: #ffd459;
-}
-
-.light-orange {
-    color: #ffca88;
-}
-
-.btn {
-    font-family: 'Architects Daughter', sans-serif;
-    font-size: 1.7rem;
-    font-weight: 700;
-    border-radius: 0.7rem;
-    width: 18rem;
-    height: 4rem;
-    transition: all 0.3s;
-}
-
-.btn-flat-light {
-    background: #fff2cc;
-    color: #ff8d66;
-    border: 0.3rem solid #fff2cc;
-    transition: all 0.25s;
-}
-
-.btn-flat-light:hover {
-    background: #ffe9aa;
-    border: 0.3rem solid #ffe9aa;
-    transition: all 0.3s;
-}
-
-.btn-flat-light:active {
-    background: transparent;
-    transition: all 0.3s;
-}
-
-.btn-flat-orange {
-    background: #ffb659;
-    color: #ffe9aa;
-    border: 0.3rem solid #ffb659;
-    transition: all 0.25s;
-}
-
-.btn-flat-orange:hover {
-    background: #ffe9aa;
-    color: #ffb659;
-    border: 0.3rem solid #ffe9aa;
-    transition: all 0.3s;
-}
-
-.btn-flat-orange:active {
-    background: #ff9003;
-    color: #ffe9aa;
-    transition: all 0.3s;
-}
-
-.btn-flat-green {
-    background: #51e89f;
-    color: #00b15c;
-    border: 0.3rem solid #51e89f;
-    transition: all 0.25s;
-}
-
-.btn-flat-green:hover {
-    background: #80f0ba;
-    color: #03d872;
-    border: 0.3rem solid #80f0ba;
-    transition: all 0.3s;
-}
-
-.btn-flat-green:active {
-    background: #00b15c;
-    color: #51e89f;
-    border: 0.3rem solid #00b15c;
-    transition: all 0.3s;
-}
-
-.hide-menu {
-    display: none;
-}
-
-.hide-toggler {
-    display: grid;
 }
 
 

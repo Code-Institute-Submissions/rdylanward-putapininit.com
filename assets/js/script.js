@@ -1,3 +1,8 @@
+/**********************************************************************/
+/***                     Initialise Parameters                      ***/
+/**********************************-***********************************/
+
+
 window.onscroll = function() {stickyNavbar()};
 
 let navbar = document.getElementById("navbar");
@@ -8,6 +13,15 @@ let modalEmailSubmit = document.getElementById("modal-email-submit");
 let modalEmailContainer = document.getElementById("modal-email-container");
 let modalEmailBox = document.getElementById("modal-email-box");
 let modalEmailBtn = document.getElementById("modal-email-btn");
+
+const btn = document.querySelector('.btn');
+let ripple;
+
+
+/**********************************************************************/
+/***                         STICKY NAVBAR                          ***/
+/**********************************-***********************************/
+
 
 /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_js_navbar_sticky.asp)
    and repurposed to aid in the function of the sticky menu */
@@ -21,6 +35,12 @@ function stickyNavbar() {
     }
 }
 
+
+/**********************************************************************/
+/***                          MOBILE MENU                           ***/
+/**********************************-***********************************/
+
+
 /* This function was originally written by W3Schools (https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) and
    repurposed to aid in the function of the mobile menu */
 function mobileMenu() {
@@ -31,8 +51,14 @@ function mobileMenu() {
     }
 }
 
+
+/**********************************************************************/
+/***                        EMAIL MODAL BOX                         ***/
+/**********************************-***********************************/
+
+
 /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
-   and repurposed to aid in the function of the sticky menu */// When the user clicks on the button, open the modal */
+   and repurposed to aid in the function of the email modal box. When the user clicks on the button, it opens the modal */
 modalEmailSubmit.onclick = function() {
     modalEmailContainer.style.display = "grid";
     modalEmailBox.style.display = "grid";
@@ -43,3 +69,18 @@ modalEmailBtn.onclick = function() {
     modalEmailContainer.style.display = "none";
     modalEmailBox.style.display = "none";
 }
+
+
+/**********************************************************************/
+/***                         RIPPLE EFFECT                          ***/
+/**********************************-***********************************/
+
+btn.addEventListener('mouseenter', e => {
+    const left = e.clientX - e.target.getBoundingClientRect().left;
+    const top = e.clientY - e.target.getBoundingClientRect().top;
+
+    ripple.document.createElement('div');
+    ripple.style.left = `${left}px`;
+    ripple.style.top = `${top}px`;
+    btn.prepend(ripple);
+})
