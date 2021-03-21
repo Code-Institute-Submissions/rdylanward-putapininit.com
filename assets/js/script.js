@@ -80,6 +80,7 @@ btn.addEventListener('mouseenter', e => {
     const top = e.clientY - e.target.getBoundingClientRect().top;
 
     ripple.document.createElement('div');
+    ripple.classList.add('ripple');
     ripple.style.left = `${left}px`;
     ripple.style.top = `${top}px`;
     btn.prepend(ripple);
