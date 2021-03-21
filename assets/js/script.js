@@ -14,7 +14,7 @@ let modalEmailContainer = document.getElementById("modal-email-container");
 let modalEmailBox = document.getElementById("modal-email-box");
 let modalEmailBtn = document.getElementById("modal-email-btn");
 
-const btn = document.querySelector('.btn');
+const btn = document.querySelector(".btn");
 let ripple;
 
 
@@ -75,13 +75,17 @@ modalEmailBtn.onclick = function() {
 /***                         RIPPLE EFFECT                          ***/
 /**********************************-***********************************/
 
-btn.addEventListener('mouseenter', e => {
+btn.addEventListener("mouseenter", (e) => {
     const left = e.clientX - e.target.getBoundingClientRect().left;
     const top = e.clientY - e.target.getBoundingClientRect().top;
 
-    ripple.document.createElement('div');
-    ripple.classList.add('ripple');
+    ripple.document.createElement("div");
+    ripple.classList.add("ripple");
     ripple.style.left = `${left}px`;
     ripple.style.top = `${top}px`;
     btn.prepend(ripple);
+})
+
+btn.addEventListener("mouseleave", () => {
+    btn.removeChild(ripple);
 })
