@@ -49,7 +49,6 @@
     border-radius: 0.7rem;
     width: 18rem;
     height: 4rem;
-    overflow: hidden;
     transition: all 0.3s;
 }
 
@@ -60,11 +59,11 @@
     transition: all 0.25s;
 }
 
-/* .btn-flat-light:hover {
+.btn-flat-light:hover {
     background: #ffe9aa;
     border: 0.3rem solid #ffe9aa;
     transition: all 0.3s;
-} */
+}
 
 .btn-flat-light:active {
     background: transparent;
@@ -76,6 +75,7 @@
     color: #ffe9aa;
     border: 0.3rem solid #ffb659;
     transition: all 0.25s;
+    overflow: hidden;
 }
 
 /* .btn-flat-orange:hover {
@@ -83,18 +83,18 @@
     color: #ffb659;
     border: 0.3rem solid #ffe9aa;
     transition: all 0.3s;
-} */
+}
 
 .btn-flat-orange:active {
     background: #ff9003;
     color: #ffe9aa;
     transition: all 0.3s;
-}
+} */
 
 .ripple {
-    position: absolute;
-    width: 0rem;
-    height: 0rem;
+    /* position: absolute; */
+    width: 0;
+    height: 0;
     background-color: #ffe9aa;
     color: #ffb659;
     border-radius: 0.7rem;
@@ -104,8 +104,8 @@
 
 @keyframes rippleAnimation {
     0% {
-        width: 0rem;
-        height: 0rem;
+        width: 0;
+        height: 0;
     }
 
     100% {
