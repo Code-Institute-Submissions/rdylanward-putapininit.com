@@ -209,7 +209,7 @@ body {
 
 .container-header {
     grid-area: header;
-    background-image: linear-gradient(rgba(133, 196, 237, 0.85), rgba(133, 196, 237, 0.85)), url("../img/flatlay-of-travel-essentials.jpg");
+    background-image: linear-gradient(rgba(133, 196, 237, 0.85), rgba(133, 196, 237, 0.85)), url("../img/travel-flatlay.jpg");
     background-size: cover;
     background-position: center;
     font-family: 'Amatic SC', sans-serif;
@@ -244,7 +244,7 @@ body {
 
 .container-destinations {
     grid-area: destinations;
-    background-image: linear-gradient(rgba(133, 196, 237, 0.85), rgba(133, 196, 237, 0.85)), url("../img/travel-flatlay.jpg");
+    background-image: linear-gradient(rgba(133, 196, 237, 0.85), rgba(133, 196, 237, 0.85)), url("../img/flatlay-of-travel-essentials.jpg");
     background-size: cover;
     background-position: center;
     height: 75vh;

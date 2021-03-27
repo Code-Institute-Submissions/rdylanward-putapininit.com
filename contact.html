@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="512x512">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <title>Put a Pin In It</title>
+    </head>
+
+    <body>
+        <!--  EMAIL MODAL  -->
+        <div class="container-modal-email" id="modal-email-container">
+            <div class="modal-email-box" id="modal-email-box">
+                <div class="modal-email-img">
+                    <img src="" alt="">
+                </div>
+                <div class="modal-email-txt font-green">
+                    <p>Thank you for signing up to our newsletter. You should receive your first edition soon.</p>
+                </div>
+                <div class="modal-email-btn">
+
+                    <!-- The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
+                       and repurposed to aid in the function of the modal -->
+                    <button class="btn btn-flat-orange" id="modal-email-btn">OK</button>
+                </div>
+            </div>
+        </div>
+        <!--  /EMAIL MODAL  -->
+
+        <!--  NAVBAR  -->
+        <nav class="container-navbar light-yellow" id="navbar">
+            <div class="navbar-brand">
+                <a class="navbar-brand-icon no-decoration light-yellow" href="index.html"><i class="fas fa-map-pin fa-4x"></i></a>
+            </div>
+            <div class="navbar-title light-yellow">
+                <span>&nbsp;Put a Pin In It</span>
+            </div>
+            <div class="navbar-menu light-yellow">
+                <ul class="navbar-menu-list">
+                    <li class="hide-menu navbar-menu-item active">
+                        <a class="navbar-menu-link no-decoration light-yellow" href="javascript:void(0);">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="hide-menu navbar-menu-item">
+                        <a class="navbar-menu-link no-decoration light-yellow" href="javascript:void(0);">Destinations</a>
+                    </li>
+                    <li class="hide-menu navbar-menu-item">
+                        <a class="navbar-menu-link no-decoration light-yellow" href="javascript:void(0);">Bookings</a>
+                    </li>
+                    <li class="hide-menu navbar-menu-item">
+                        <a class="navbar-menu-link no-decoration light-yellow" href="javascript:void(0);">Contact</a>
+                    </li>
+                    <li class="hide-toggler navbar-menu-item">
+                        <a class="navbar-toggler navbar-menu-link no-decoration light-yellow" href="javascript:void(0);" onclick="mobileMenu()"><i class="fas fa-bars"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--  /NAVBAR  -->
+
+        <!--  MOBILE NAVBAR  -->
+        <nav class="container-navbar-mobile light-yellow" id="navbar-mobile">
+            <div class="navbar-mobile">
+                <ul class="navbar-mobile-list">
+                    <li class="navbar-mobile-item active">
+                        <a class="navbar-mobile-link no-decoration light-yellow" href="javascript:void(0);">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="navbar-mobile-item">
+                        <a class="navbar-mobile-link no-decoration light-yellow" href="javascript:void(0);">Destinations</a>
+                    </li>
+                    <li class="navbar-mobile-item">
+                        <a class="navbar-mobile-link no-decoration light-yellow" href="javascript:void(0);">Bookings</a>
+                    </li>
+                    <li class="navbar-mobile-item">
+                        <a class="navbar-mobile-link no-decoration light-yellow" href="javascript:void(0);">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--  /MOBILE NAVBAR  -->
+
+        <!--  GRID CONTAINER  -->
+        <div class="container-main-destinations">
+
+
+            <!--  FOOTER  -->
+            <footer class="container-footer">
+                <div class="footer-start">
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-link no-decoration light-yellow" href="javascript:void(0);">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-link no-decoration light-yellow" href="javascript:void(0);">Destinations</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-link no-decoration light-yellow" href="javascript:void(0);">Bookings</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-link no-decoration light-yellow" href="javascript:void(0);">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-middle light-yellow">
+                    <div class="footer-social">
+                        <ul class="footer-social-list">
+                            <li class="footer-social-items">
+                                <a href="https://www.facebook.com" class="footer-social-icon no-decoration light-yellow"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li class="footer-social-items">
+                                <a href="https://www.twitter.com" class="footer-social-icon no-decoration light-yellow"><i class="fab fa-twitter-square"></i></a>
+                            </li>
+                            <li class="footer-social-items">
+                                <a href="https://www.instagram.com" class="footer-social-icon no-decoration light-yellow"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter">
+                        <p class="footer-newsletter-label">Sign up for our newsletter!</p>
+                    </div>
+                    <div class="footer-input">
+                        <form class="footer-input-form" method="get">
+                            <input class="footer-input-email font-light" id="footer-email" type="email" placeholder="Enter email...">
+                            <input class="btn btn-flat-light footer-input-btn" id="modal-email-submit" type="Button" value="Sign Up!">
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-end light-yellow">
+                    <ul class="footer-end-list">
+                        <li class="footer-end-items">Put a Pin In It</li>
+                        <li class="footer-end-items">Main Street</li>
+                        <li class="footer-end-items">Scotstown</li>
+                        <li class="footer-end-items">Co. Monaghan</li>
+                        <li class="footer-end-items">H18 TP21</li>
+                        <li class="footer-end-items">Ireland</li>
+                        <li class="footer-end-items footer-contact-phone">(0)47 55512</li>
+                        <li class="footer-end-items footer-contact-email">info@putapininit.com</li>
+                    </ul>
+                </div>
+                <div class="footer-copyright light-yellow">
+                    <p class="footer-copyright-text">Copyright&copy; 2021 by Chew The Rag Designs. All rights reserved.</p>
+                </div>
+            </footer>
+            <!-- /FOOTER  -->
+
+        </div>
+        <!--  /GRID CONTAINER  -->
+
+        <!--  JSCRIPT & JQUERY  -->
+        <script type="text/javascript" src="assets/js/script.js"></script>
+        <!--  /JSCRIPT & JQUERY  -->
+
+    </body>
+</html>
