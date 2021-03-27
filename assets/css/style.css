@@ -72,14 +72,14 @@
 
 .btn-flat-orange {
     background: #ffb659;
-    color: #ffe9aa;
+    color: #fff2cc;
     border: 0.3rem solid #ffb659;
     transition: all 0.25s;
     overflow: hidden;
 }
 
 /* .btn-flat-orange:hover {
-    background: #ffe9aa;
+    background: #fff2cc;
     color: #ffb659;
     border: 0.3rem solid #ffe9aa;
     transition: all 0.3s;
@@ -87,7 +87,7 @@
 
 .btn-flat-orange:active {
     background: #ff9003;
-    color: #ffe9aa;
+    color: #fff2cc;
     transition: all 0.3s;
 } */
 
@@ -209,7 +209,7 @@ body {
 
 .container-header {
     grid-area: header;
-    background-image: linear-gradient(rgba(133, 196, 237, 0.85), rgba(133, 196, 237, 0.85)), url("../img/travel-flatlay.jpg");
+    background-image: linear-gradient(rgba(133, 196, 237, 0.85), rgba(133, 196, 237, 0.85)), url("../img/antique-binoculars-and-map.jpg");
     background-size: cover;
     background-position: center;
     font-family: 'Amatic SC', sans-serif;
