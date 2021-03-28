@@ -18,7 +18,7 @@
 
 .container-bookings-header {
     grid-area: bookings-header;
-    background-image: linear-gradient(rgba(133, 196, 237, 0.85), rgba(133, 196, 237, 0.85)), url("../img/decorated-chinese-store-front.jpg");
+    background-image: linear-gradient(rgba(6, 101, 162, 0.6), rgba(6, 101, 162, 0.6)), url("../img/decorated-chinese-store-front.jpg");
     background-size: cover;
     background-position: center;
     font-family: 'Architects Daughter', sans-serif;
@@ -82,7 +82,7 @@
 
 .input-defaults {
     background: transparent;
-    border: 0.25rem solid #f2f0e5;
+    border: 0.25rem solid #fff2cc;
     border-radius: 0.7rem;
     width: 26rem;
     height: 1.95rem;
@@ -90,7 +90,7 @@
 }
 
 .input-defaults::placeholder {
-    color: #f2f0e5;
+    color: #fff2cc;
     font-family: 'Architects Daughter', sans-serif;
     font-weight: 400;
     padding: 0rem 0.3rem;
