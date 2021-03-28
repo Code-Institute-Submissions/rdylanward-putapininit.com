@@ -7,6 +7,7 @@
 	    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="512x512">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/style-bookings.css" type="text/css">
         <title>Put a Pin In It</title>
     </head>
 
@@ -82,7 +83,25 @@
         <!--  /MOBILE NAVBAR  -->
 
         <!--  GRID CONTAINER  -->
-        <div class="container-main-destinations">
+        <div class="container-bookings">
+            <!--  HEADER  -->
+            <header class="container-contact-header">
+                <div class="contact-header">
+                    <h1 class="contact-heading light-yellow">We love to hear from you!</h1>
+                    <p class="contact-summary light-yellow">We always love to hear from our clients. Be it a simple query, a change to a booking or just to say hello. Give us a shout.</p>
+                </div>
+                <div class="contact-form">
+                    <form class="contact-inputs" method="get">
+                        <input class="contact-inputs-first input-contact-defaults light-yellow input-box" type="text" id="first-name" name="first-name" placeholder="First Name...">
+                        <input class="contact-inputs-last input-contact-defaults light-yellow input-box" type="text" id="last-name" name="last-name" placeholder="Last Name...">
+                        <input class="contact-inputs-phone input-contact-defaults light-yellow input-box" type="text" id="phone" name="phone" placeholder="Phone Number...">
+                        <input class="contact-inputs-email input-contact-defaults light-yellow input-box" type="email"  id="email" placeholder="Enter Email...">
+                        <textarea class="contact-inputs-comments input-contact-defaults light-yellow input-comments" id="comments" name="comments" placeholder="Enter any comments or requests..."></textarea>
+                        <input class="btn btn-flat-orange contact-inputs-btn" type="button" id="bookings-submit" value="Book Now!">
+                    </form>
+                </div>
+            </header>
+            <!--  /HEADER  -->
 
 
             <!--  FOOTER  -->
@@ -150,6 +169,7 @@
 
         <!--  JSCRIPT & JQUERY  -->
         <script type="text/javascript" src="assets/js/script.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <!--  /JSCRIPT & JQUERY  -->
 
     </body>
