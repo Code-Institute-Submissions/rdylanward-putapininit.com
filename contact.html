@@ -7,7 +7,7 @@
 	    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="512x512">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-        <link rel="stylesheet" href="assets/css/style-bookings.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/style-contact.css" type="text/css">
         <title>Put a Pin In It</title>
     </head>
 
@@ -83,20 +83,20 @@
         <!--  /MOBILE NAVBAR  -->
 
         <!--  GRID CONTAINER  -->
-        <div class="container-bookings">
+        <div class="container-contact">
             <!--  HEADER  -->
             <header class="container-contact-header">
                 <div class="contact-header">
-                    <h1 class="contact-heading light-yellow">We love to hear from you!</h1>
-                    <p class="contact-summary light-yellow">We always love to hear from our clients. Be it a simple query, a change to a booking or just to say hello. Give us a shout.</p>
+                    <h1 class="contact-heading dark-blue">We love to hear from you!</h1>
+                    <p class="contact-summary dark-blue">We always love to hear from our clients. Be it a simple query, a change to a booking or just to say hello. Give us a shout.</p>
                 </div>
                 <div class="contact-form">
                     <form class="contact-inputs" method="get">
-                        <input class="contact-inputs-first input-contact-defaults light-yellow input-box" type="text" id="first-name" name="first-name" placeholder="First Name...">
-                        <input class="contact-inputs-last input-contact-defaults light-yellow input-box" type="text" id="last-name" name="last-name" placeholder="Last Name...">
-                        <input class="contact-inputs-phone input-contact-defaults light-yellow input-box" type="text" id="phone" name="phone" placeholder="Phone Number...">
-                        <input class="contact-inputs-email input-contact-defaults light-yellow input-box" type="email"  id="email" placeholder="Enter Email...">
-                        <textarea class="contact-inputs-comments input-contact-defaults light-yellow input-comments" id="comments" name="comments" placeholder="Enter any comments or requests..."></textarea>
+                        <input class="contact-inputs-first input-contact-defaults dark-blue input-box" type="text" id="first-name" name="first-name" placeholder="First Name...">
+                        <input class="contact-inputs-last input-contact-defaults dark-blue input-box" type="text" id="last-name" name="last-name" placeholder="Last Name...">
+                        <input class="contact-inputs-phone input-contact-defaults dark-blue input-box" type="text" id="phone" name="phone" placeholder="Phone Number...">
+                        <input class="contact-inputs-email input-contact-defaults dark-blue input-box" type="email"  id="email" placeholder="Enter Email...">
+                        <textarea class="contact-inputs-comments input-contact-defaults dark-blue input-comments" id="comments" name="comments" placeholder="Enter any comments or requests..."></textarea>
                         <input class="btn btn-flat-orange contact-inputs-btn" type="button" id="bookings-submit" value="Book Now!">
                     </form>
                 </div>
@@ -168,6 +168,73 @@
         <!--  /GRID CONTAINER  -->
 
         <!--  JSCRIPT & JQUERY  -->
+        <script>
+            /**********************************************************************/
+            /***                     Initialise Parameters                      ***/
+            /**********************************-***********************************/
+
+            window.onscroll = function() {stickyNavbar()};
+
+            const navbar = document.getElementById("navbar");
+            let navbarMobile = document.getElementById("navbar-mobile");
+            let sticky = navbar.offsetHeight;
+
+            let modalEmailSubmit = document.getElementById("modal-email-submit");
+            let modalEmailContainer = document.getElementById("modal-email-container");
+            let modalEmailBox = document.getElementById("modal-email-box");
+            let modalEmailBtn = document.getElementById("modal-email-btn");
+
+
+            /**********************************************************************/
+            /***                         STICKY NAVBAR                          ***/
+            /**********************************-***********************************/
+
+            /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_js_navbar_sticky.asp)
+               and repurposed to aid in the function of the sticky menu */
+            function stickyNavbar() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky-navbar");
+                    navbarMobile.classList.add("sticky-navbar-mobile");
+                } else {
+                    navbar.classList.remove("sticky-navbar");
+                    navbarMobile.classList.remove("sticky-navbar-mobile");
+                }
+            }
+
+
+            /**********************************************************************/
+            /***                          MOBILE MENU                           ***/
+            /**********************************-***********************************/
+
+
+            /* This function was originally written by W3Schools (https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) and
+               repurposed to aid in the function of the mobile menu */
+            function mobileMenu() {
+                if (navbarMobile.style.display === "none") {
+                    navbarMobile.style.display = "grid";
+                } else {
+                    navbarMobile.style.display = "none";
+                }
+            }
+
+
+            /**********************************************************************/
+            /***                        EMAIL MODAL BOX                         ***/
+            /**********************************-***********************************/
+
+            /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
+               and repurposed to aid in the function of the email modal box. When the user clicks on the button, it opens the modal */
+            modalEmailSubmit.onclick = function() {
+                modalEmailContainer.style.display = "grid";
+                modalEmailBox.style.display = "grid";
+            }
+
+            /* When the user clicks on 'Close' in the modal */
+            modalEmailBtn.onclick = function() {
+                modalEmailContainer.style.display = "none";
+                modalEmailBox.style.display = "none";
+            }
+        </script>
         <script type="text/javascript" src="assets/js/script.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <!--  /JSCRIPT & JQUERY  -->

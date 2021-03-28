@@ -2,6 +2,10 @@
 /***                          Basic Setup                           ***/
 /**********************************-***********************************/
 
+.container-navbar-mobile {
+    background-color: rgba(43, 225, 137, 0.95);
+}
+
 .container-contact {
     position: absolute;
     display: grid;
@@ -18,7 +22,7 @@
 
 .container-contact-header {
     grid-area: contact-header;
-    background-image: linear-gradient(rgba(81, 232, 159, 0.6), rgba(81, 232, 159, 0.6)), url("../img/decorated-chinese-store-front.jpg");
+    background-image: linear-gradient(rgba(81, 232, 159, 0.8), rgba(81, 232, 159, 0.8)), url("../img/poolside-using-smart-phone.jpg");
     background-size: cover;
     background-position: center;
     font-family: 'Architects Daughter', sans-serif;
@@ -30,11 +34,20 @@
     grid-template-columns: 7.5% 85% 7.5%;
     grid-template-areas:
         ". . ."
-        ". heading ."
-        ". contact ."
+        ". headr ."
+        ". cntct ."
         ". . .";
     grid-template-rows: 10% 35% 45% 10%;
     justify-items: center;
+}
+
+
+/**********************************************************************/
+/***                             Navbar                             ***/
+/**********************************-***********************************/
+
+.sticky-navbar {
+    background: rgba(128, 240, 186, 0.975);
 }
 
 
@@ -43,8 +56,8 @@
 /**********************************-***********************************/
 
 .contact-header {
-    grid-area: heading;
-    align-self: flex-start;
+    grid-area: headr;
+    align-self: flex-end;
 }
 
 .contact-header h1 {
@@ -63,7 +76,7 @@
 }
 
 .contact-form {
-    grid-area: contact;
+    grid-area: cntct;
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas:
@@ -94,7 +107,7 @@
 }
 
 .contact-inputs textarea {
-    height: 3.7rem;
+    height: 6rem;
 }
 
 .contact-inputs textarea::placeholder {
