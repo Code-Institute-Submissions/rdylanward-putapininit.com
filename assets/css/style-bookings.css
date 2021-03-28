@@ -18,7 +18,7 @@
 
 .container-bookings-header {
     grid-area: bookings-header;
-    background-image: linear-gradient(rgba(133, 196, 237, 0.8), rgba(133, 196, 237, 0.8)), url("../img/decorated-chinese-store-front.jpg");
+    background-image: linear-gradient(rgba(133, 196, 237, 0.85), rgba(133, 196, 237, 0.85)), url("../img/decorated-chinese-store-front.jpg");
     background-size: cover;
     background-position: center;
     font-family: 'Architects Daughter', sans-serif;
@@ -34,6 +34,7 @@
         ". booking ."
         ". . .";
     grid-template-rows: 10% 35% 45% 10%;
+    justify-items: center;
 }
 
 
@@ -43,6 +44,22 @@
 
 .bookings-header {
     grid-area: heading;
+    align-self: flex-start;
+}
+
+.bookings-header h1 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.bookings-header p {
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 120%;
+    margin: 0.5rem 0rem 1.5rem 0rem;
 }
 
 .bookings-form {
@@ -59,18 +76,36 @@
         "todt"
         "cmnt";
     grid-template-rows: repeat(8, min-content);
-    margin-top: 1.5rem;
-}
-
-.bookings-header h1 {
-    font-family: 'Amatic SC', sans-serif;
-    font-size: 3.3rem;
-    font-weight: 700;
     text-align: center;
+    margin-top: 0.3rem;
 }
 
-.bookings-header p {
-    font-size: 1.8rem;
-    text-align: justify;
-    line-height: 120%;
+.input-defaults {
+    background: transparent;
+    border: 0.25rem solid #f2f0e5;
+    border-radius: 0.7rem;
+    width: 26rem;
+    height: 1.95rem;
+    margin: 0.2rem 0rem;
+}
+
+.input-defaults::placeholder {
+    color: #f2f0e5;
+    font-family: 'Architects Daughter', sans-serif;
+    font-weight: 400;
+    padding: 0rem 0.3rem;
+}
+
+.bookings-inputs textarea {
+    height: 3.7rem;
+}
+
+.bookings-inputs textarea::placeholder {
+    font-family: 'Architects Daughter', sans-serif;
+    font-weight: 400;
+    font-size: 101%;
+}
+
+.bookings-inputs-btn {
+    margin-top: 0.5rem;
 }
