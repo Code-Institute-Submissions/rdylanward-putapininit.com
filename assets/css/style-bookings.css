@@ -2,6 +2,10 @@
 /***                          Basic Setup                           ***/
 /**********************************-***********************************/
 
+.container-navbar-mobile {
+    background-color: rgba(52, 153, 219, 0.9);
+}
+
 .container-bookings {
     position: absolute;
     display: grid;
@@ -18,7 +22,7 @@
 
 .container-bookings-header {
     grid-area: bookings-header;
-    background-image: linear-gradient(rgba(6, 101, 162, 0.6), rgba(6, 101, 162, 0.6)), url("../img/decorated-chinese-store-front.jpg");
+    background-image: linear-gradient(rgba(6, 101, 162, 0.65), rgba(6, 101, 162, 0.65)), url("../img/decorated-chinese-store-front.jpg");
     background-size: cover;
     background-position: center;
     font-family: 'Architects Daughter', sans-serif;
@@ -35,6 +39,15 @@
         ". . .";
     grid-template-rows: 10% 35% 45% 10%;
     justify-items: center;
+}
+
+
+/**********************************************************************/
+/***                             Navbar                             ***/
+/**********************************-***********************************/
+
+.sticky-navbar {
+    background: rgba(133, 196, 237, 0.93);
 }
 
 
@@ -86,7 +99,7 @@
     border-radius: 0.7rem;
     width: 26rem;
     height: 1.95rem;
-    margin: 0.2rem 0rem;
+    margin: 0.25rem 0rem;
 }
 
 .input-defaults::placeholder {
