@@ -28,9 +28,9 @@ btnOrange.addEventListener("mouseleave", () => {
 
 /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/js/js_dates.asp)
    and repurposed to aid in the function of the date elements of the bookings form */
-function getDate() {
-    let currentDate = new Date();
+function obtainDate() {
+    const formattedDate = date => date.toISOString().slice(0, 10);
 
-    document.getElementById("from-date").innerHTML = currentDate;
-    document.getElementById("to-date").innerHTML = currentDate;
+    console.log(formattedDate(new Date()));
+    /* return formattedDate(new Date()); */
 }
