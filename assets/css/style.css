@@ -242,7 +242,7 @@ body {
     padding: 5rem 0rem;
 }
 
-.container-destinations {
+.container-main-destinations {
     grid-area: destinations;
     background-image: linear-gradient(rgba(6, 101, 162, 0.6), rgba(6, 101, 162, 0.6)), url("../img/flatlay-of-travel-essentials.jpg");
     background-size: cover;
