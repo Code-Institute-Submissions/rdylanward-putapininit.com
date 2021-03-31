@@ -82,8 +82,26 @@
         <!--  /MOBILE NAVBAR  -->
 
         <!--  GRID CONTAINER  -->
-        <div class="container-main-destinations">
+        <div class="container-destinations">
+            <!--  HEADER  -->
+            <header class="container-destinations-header">
+                <div class="destinations-header">
+                    <h1 class="destinations-heading light-yellow">Need a place to go?</h1>
+                    <p class="destinations-summary light-yellow">Just fill out the details in the form below and click the 'Book Now' button below. One of our representatives will get back to you right away to finalise to finalize the booking and get you started on your journey.</p>
+                </div>
+            </header>
+            <!--  /HEADER  -->
 
+            <!--  MAP  -->
+            <section class="container-map">
+                <div class="map-window" id="map-window">
+
+                </div>
+                <div class="map-button">
+                    <button class="map-btn"></button>
+                </div>
+            </section>
+            <!--  \MAP  -->
 
             <!--  FOOTER  -->
             <footer class="container-footer">
@@ -217,6 +235,7 @@
             }
         </script>
         <script type="text/javascript" src="assets/js/script.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?libraries=localContext&v=beta&key=AIzaSyCHfesWbnCqpMmeg2rp-s6goA3w04PYBPE&callback=initMap"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <!--  /JSCRIPT & JQUERY  -->
 
