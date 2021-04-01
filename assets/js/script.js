@@ -44,6 +44,7 @@ function obtainDate() {
    Google Maps Platform Maps JavaScript API Guide and repurposed to aid in
    the function and design of the map */
 let newMap;
+let autocomplete;
 
 function initMap() {
      /* Create the new map inside the 'map-window' div element */
@@ -66,3 +67,11 @@ function initMap() {
 
 /* Call the map */
 initMap();
+
+function initAutocomplete() {
+    autocomplete = new google.maps.places.Autocomplete(
+        document.getElementById('autocomplete'), {
+            types: ['regions'],
+
+        })
+}
