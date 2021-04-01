@@ -12,8 +12,9 @@
     grid-template-columns: 100%;
     grid-template-areas:
         "destinations-header"
+        "map"
         "footer";
-    grid-template-rows: repeat(2, min-content);
+    grid-template-rows: repeat(3, min-content);
     background-color: #f2f0e5;
     width: 100%;
     top: 0;
@@ -21,8 +22,8 @@
 }
 
 .container-destinations-header {
-    grid-area: bookings-header;
-    background-image: linear-gradient(rgba(255, 212, 89, 0.9), rgba(255, 212, 89, 0.9)), url("../img/travel-plans-are-the-best-plans.jpg");
+    grid-area: destinations-header;
+    background-image: linear-gradient(rgba(255, 189, 3, 0.7), rgba(255, 189, 3, 0.7)), url("../img/travel-plans-are-the-best-plans.jpg");
     background-size: cover;
     background-position: center;
     font-family: 'Architects Daughter', sans-serif;
@@ -34,11 +35,14 @@
     grid-template-columns: 7.5% 85% 7.5%;
     grid-template-areas:
         ". . ."
-        ". heading ."
-        ". descript ."
+        ". dest-heading ."
         ". . .";
-    grid-template-rows: 10% 35% 45% 10%;
+    grid-template-rows: 10% 80% 10%;
     justify-items: center;
+}
+
+.container-map {
+    grid-area: map;
 }
 
 
@@ -55,3 +59,34 @@
 /***                             HEADER                             ***/
 /**********************************-***********************************/
 
+.destinations-header {
+    grid-area: dest-heading;
+    align-self: center;
+}
+
+.destinations-header h1 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.destinations-header p {
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 120%;
+    margin: 0.5rem 0rem 1.5rem 0rem;
+}
+
+
+/**********************************************************************/
+/***                              MAP                               ***/
+/**********************************-***********************************/
+
+#map-window {
+    width: 90vw;
+    height: 90vh;
+    border: 0rem solid transparent;
+    border-radius: 0.7rem;
+}

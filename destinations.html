@@ -7,6 +7,7 @@
 	    <link rel="icon" type="image/png" href="assets/img/android-chrome-512x512.png" sizes="512x512">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/style-destinations.css" type="text/css">
         <title>Put a Pin In It</title>
     </head>
 
@@ -94,11 +95,9 @@
 
             <!--  MAP  -->
             <section class="container-map">
-                <div class="map-window" id="map-window">
-
-                </div>
+                <div class="map-window" id="map-window"></div>
                 <div class="map-button">
-                    <button class="map-btn"></button>
+                    <button class="btn btn-flat-orange map-btn">More Destinations</button>
                 </div>
             </section>
             <!--  \MAP  -->
@@ -235,8 +234,8 @@
             }
         </script>
         <script type="text/javascript" src="assets/js/script.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?libraries=localContext&v=beta&key=AIzaSyCHfesWbnCqpMmeg2rp-s6goA3w04PYBPE&callback=initMap"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHfesWbnCqpMmeg2rp-s6goA3w04PYBPE&callback=initMap&libraries=places&v=weekly"></script>
         <!--  /JSCRIPT & JQUERY  -->
 
     </body>
