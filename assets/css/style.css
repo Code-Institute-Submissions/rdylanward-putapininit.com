@@ -647,7 +647,7 @@ body {
 
 .footer-menu-item {
     list-style: none;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-weight: 700;
     text-align: center;
     margin-bottom: 0.6rem;
@@ -673,9 +673,9 @@ body {
         "social"
         "news"
         "input"
-        "member"
+        /* "member" */
         "button";
-    grid-template-rows: repeat(5, max-content);
+    grid-template-rows: repeat(4, max-content);
 }
 
 .footer-social {
@@ -721,7 +721,7 @@ body {
 }
 
 .footer-newsletter-label {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: center;
     margin-top: 0rem;
     margin-bottom: 0.9rem;
@@ -759,18 +759,18 @@ body {
     transition: background-color 0.25s;
 }
 
-.footer-membership {
+/* .footer-membership {
     grid-area: member;
     justify-items: center;
     margin-top: 1.9rem;
 }
 
 .footer-membership-header {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: center;
     margin-top: 0rem;
     margin-bottom: 0rem;
-}
+} */
 
 .footer-button {
     grid-area: button;
@@ -799,7 +799,7 @@ body {
 }
 
 .footer-end-items {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
     list-style: none;
 }
@@ -811,7 +811,7 @@ body {
 }
 
 .footer-copyright-text {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin-bottom: 1.7rem;
 }
 

@@ -3,16 +3,18 @@
 /**********************************-***********************************/
 
 .container-navbar-mobile {
-    background-color: rgba(52, 153, 219, 0.9);
+    background-color: rgba(255, 224, 136, 0.95);
 }
 
 .container-destinations {
     position: absolute;
+    font-family: 'Architects Daughter', sans-serif;
+    font-weight: 400;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-areas:
         "destinations-header"
-        "map"
+        "destinations-map"
         "footer";
     grid-template-rows: repeat(3, min-content);
     background-color: #f2f0e5;
@@ -23,26 +25,36 @@
 
 .container-destinations-header {
     grid-area: destinations-header;
-    background-image: linear-gradient(rgba(255, 189, 3, 0.7), rgba(255, 189, 3, 0.7)), url("../img/travel-plans-are-the-best-plans.jpg");
+    background-image: linear-gradient(rgba(255, 189, 3, 0.5), rgba(255, 189, 3, 0.5)), url("../img/travel-plans-are-the-best-plans.jpg");
     background-size: cover;
     background-position: center;
-    font-family: 'Architects Daughter', sans-serif;
-    font-weight: 400;
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
     display: grid;
-    grid-template-columns: 7.5% 85% 7.5%;
+    grid-template-columns: 5% 90% 5%;
     grid-template-areas:
         ". . ."
         ". dest-heading ."
         ". . .";
     grid-template-rows: 10% 80% 10%;
-    justify-items: center;
 }
 
 .container-map {
-    grid-area: map;
+    grid-area: destinations-map;
+    background-image: linear-gradient(rgba(6, 101, 162, 0.6), rgba(6, 101, 162, 0.6)), url("../img/a-seat-with-a-beachside-view.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-areas:
+        ". . ."
+        ". map-display ."
+        ". map-btn .";
+    grid-template-rows: 2.5% 82.5% 15%;
 }
 
 
@@ -51,9 +63,21 @@
 /**********************************-***********************************/
 
 .sticky-navbar {
-    background: rgba(133, 196, 237, 0.93);
+    background: rgba(255, 212, 89, 0.975);
 }
 
+.navbar-menu-link:hover {
+    color: #ba8a00;
+}
+
+
+/**********************************************************************/
+/***                         Mobile Navbar                          ***/
+/**********************************-***********************************/
+
+.navbar-mobile-list li a {
+    color: #ba8a00;
+}
 
 /**********************************************************************/
 /***                             HEADER                             ***/
@@ -61,19 +85,23 @@
 
 .destinations-header {
     grid-area: dest-heading;
+    background: rgba(254, 188, 0, 0.85);
+    border-radius: 0.7rem;
     align-self: center;
+    justify-self: end;
+    padding: 0rem 2rem;
 }
 
 .destinations-header h1 {
     font-family: 'Amatic SC', sans-serif;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 700;
     text-align: center;
     margin: 1rem 0rem 2rem 0rem;
 }
 
 .destinations-header p {
-    font-size: 1.8rem;
+    font-size: 1.85rem;
     text-align: justify;
     line-height: 120%;
     margin: 0.5rem 0rem 1.5rem 0rem;
@@ -84,9 +112,73 @@
 /***                              MAP                               ***/
 /**********************************-***********************************/
 
-#map-window {
-    width: 90vw;
-    height: 90vh;
+.map-window {
+    grid-area: map-display;
+    width: 100%;
+    height: 100%;
     border: 0rem solid transparent;
     border-radius: 0.7rem;
+    justify-self: start;
 }
+
+.map-button {
+    grid-area: map-btn;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "txt"
+        "btn";
+    grid-template-rows: 40% 60%;
+    margin-bottom: 0.5rem;
+}
+
+#autocomplete {
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 75%;
+    height: 2.75rem;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.6rem;
+    margin: 1rem;
+    z-index: 25;
+}
+
+.map-button-text {
+    grid-area: txt;
+    font-size: 1.8rem;
+    text-align: justify;
+    place-self: center center;
+    margin: 0rem;
+}
+
+.map-btn {
+    grid-area: btn;
+    place-self: start center;
+}
+
+
+/**********************************************************************/
+/***                         Media Queries                          ***/
+/**********************************-***********************************/
+
+/****  screen and (max-width: 361px)  ****/
+
+@media screen and (max-width: 361px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-map {
+        grid-template-columns: 2.5% 95% 2.5%;
+    }
+
+    /***************/
+    /***   MAP   ***/
+    /***************/
+
+    #autocomplete {
+        width: 71.5%;
+    }
+}
+/****  /screen and (max-width: 361px)  ****/
