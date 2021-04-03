@@ -48,7 +48,7 @@ let autocomplete;
 
 function initAutocomplete() {
      /* Create the new map inside the 'map-window' div element */
-    const map = new google.maps.Map(document.getElementById("map-window"), {
+    const newMap = new google.maps.Map(document.getElementById("map-window"), {
         /* Define the center of the map */
         center: { lat: 52.27775, lng: -7.06749 },
 
@@ -66,44 +66,22 @@ function initAutocomplete() {
     });
 
     /* Set a tilt angle of the map when zoomed in using browsers that support the feature */
-    map.setTilt(45);
+    newMap.setTilt(45);
 
-    /* Set the autocomplete function and link to the input element */
-    //autocomplete = new google.maps.places.Autocomplete(
-        //document.getElementById('autocomplete'), {
-            //types: ['regions'],
-            //fields: ['place_id', 'geometry', 'name']
-        //});
-
-    //autocomplete.addListner('place_changed', onPlaceChanged);
-//}
-
-//function onPlaceChanged() {
-    /* Capture the entered place */
-    //let place = autocomplete.getPlaces();
-
-    //if (!place.geometry) {
-        /* Nothing entered, reset input */
-        //document.getElementById('autocomplete').placeholder = 'Enter your destination';
-    //} else {
-        /* Display the place entered */
-        //document.getElementById('details').innerHTML = place.name;
-    //}
-
-    // Create the search box and link it to the UI element.
+    /* Create the search box and link it to the UI element */
     const input = document.getElementById('autocomplete');
     const searchBox = new google.maps.places.SearchBox(input);
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+    newMap.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
-    // Bias the SearchBox results towards current map's viewport.
-    map.addListener('bounds_changed', () => {
+    /* Bias the SearchBox results towards current map's viewport */
+    newMap.addListener('bounds_changed', () => {
         searchBox.setBounds(map.getBounds());
     });
 
     let markers = [];
 
-    // Listen for the event fired when the user selects a prediction and retrieve
-    // more details for that place.
+    /* Listen for the event fired when the user selects a prediction and retrieve
+       more details for that place */
     searchBox.addListener('places_changed', () => {
         const places = searchBox.getPlaces();
 
@@ -111,14 +89,14 @@ function initAutocomplete() {
             return;
         }
 
-        // Clear out the old markers.
+        /* Clear out the old markers */
         markers.forEach((marker) => {
             marker.setMap(null);
         });
 
         markers = [];
 
-        // For each place, get the icon, name and location.
+        /* For each place, get the icon, name and location */
         const bounds = new google.maps.LatLngBounds();
 
         places.forEach((place) => {
@@ -135,7 +113,7 @@ function initAutocomplete() {
                 scaledSize: new google.maps.Size(25, 25),
             };
 
-            // Create a marker for each place.
+            /* Create a marker for each place */
             markers.push(
                 new google.maps.Marker({
                     map,
@@ -146,14 +124,14 @@ function initAutocomplete() {
             );
 
             if (place.geometry.viewport) {
-                // Only geocodes have viewport.
+                /* Only geocodes have viewport */
                 bounds.union(place.geometry.viewport);
             } else {
                 bounds.extend(place.geometry.location);
             }
         });
 
-        map.fitBounds(bounds);
+        newMap.fitBounds(bounds);
     });
 }
 
