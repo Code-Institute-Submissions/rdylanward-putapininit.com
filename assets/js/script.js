@@ -1,4 +1,24 @@
 /**********************************************************************/
+/***                         CURRENT DATE                           ***/
+/**********************************-***********************************/
+
+/* The following Javascript was originally provided by Robin Drexler
+   (https://stackoverflow.com/questions/14245339/pre-populating-date-input-field-with-javascript)
+   for adding the current date to my input dat fields. */
+
+(function () {
+    let currentDate = new Date().toISOString().substring(0, 10),
+        dateField1 = document.querySelector('#from-date'),
+        dateField2 = document.querySelector('#to-date');
+    dateField1.value = currentDate;
+    dateField2.value = currentDate;
+    console.log(dateField1.value);
+    console.log(dateField2.value);
+
+})()
+
+
+/**********************************************************************/
 /***                              MAP                               ***/
 /**********************************-***********************************/
 
