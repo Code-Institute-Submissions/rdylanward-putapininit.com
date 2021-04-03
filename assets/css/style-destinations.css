@@ -97,7 +97,7 @@
     font-size: 4.5rem;
     font-weight: 700;
     text-align: center;
-    margin: 1rem 0rem 2rem 0rem;
+    margin: 1rem 0rem;
 }
 
 .destinations-header p {
@@ -182,3 +182,75 @@
     }
 }
 /****  /screen and (max-width: 361px)  ****/
+
+
+/****  /screen and (min-width: 768px)  ****/
+
+@media screen and (min-width: 768px) {
+    /****************/
+    /***  HEADER  ***/
+    /****************/
+
+    .container-destinations-header {
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    /***************/
+    /***   MAP   ***/
+    /***************/
+
+    .container-map {
+        grid-template-rows: 5% 82.5% 12.5%;
+    }
+}
+/****  /screen and (min-width: 768px)  ****/
+
+
+/****  /screen and (min-width: 1024px)  ****/
+
+@media screen and (min-width: 1024px) {
+    /****************/
+    /***  HEADER  ***/
+    /****************/
+
+    .container-destinations-header {
+        grid-template-columns: 15% 70% 15%;
+    }
+
+    /***************/
+    /***   MAP   ***/
+    /***************/
+
+    .map-button-text {
+        font-size: 2.1rem;
+    }
+}
+/****  /screen and (min-width: 1024px)  ****/
+
+
+/****  /screen and (min-width: 1200px)  ****/
+
+@media screen and (min-width: 1200px) {
+    /***************/
+    /***   MAP   ***/
+    /***************/
+
+    .container-map {
+        grid-template-rows: 5% 77.5% 15%;
+    }
+}
+/****  /screen and (min-width: 1200px)  ****/
+
+
+/****  /screen and (min-width: 1400px)  ****/
+
+@media screen and (min-width: 1400px) {
+    /***************/
+    /***   MAP   ***/
+    /***************/
+
+    .container-map {
+        grid-template-rows: 5% 80% 12.5%;
+    }
+}
+/****  /screen and (min-width: 1400px)  ****/
