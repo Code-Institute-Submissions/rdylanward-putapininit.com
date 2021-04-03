@@ -37,44 +37,34 @@ The scope of the project was to design a fictional travel website that calls on 
 
     -   #### First Time Visitor Goals
 
-        1. - FUTURE TEST PARAMETERS HERE -
-        2. - FUTURE TEST PARAMETERS HERE -
-        3. - FUTURE TEST PARAMETERS HERE -
-        4. - FUTURE TEST PARAMETERS HERE -
+        1. - Introduce the site and welcome new users -
+        2. - Describe to new users who the owners are and there ethos -
+        3. - Provide a basic description of the features -
+        4. - Provide new users with clear and concise navigation throughout the site -
+        5. - Get new users to try the map feature and explore new destinations and plan activities -
+        6. - Provide the opportunity for new users to book a holiday destination -
 
     -   #### Returning Visitor Goals
 
-        1. - FUTURE TEST PARAMETERS HERE -
-        1. - FUTURE TEST PARAMETERS HERE -
+        1. - Steer returning clients to the destinations page to explore new destinations -
+        2. - Ensure that returning clients can book further holidays -
+        3. - Enable users to sign-up for the company newsletter to receive holiday reviews, current deals, and company news -
 
     -   #### Frequent User Goals
-        1. - FUTURE TEST PARAMETERS HERE -
-        2. - FUTURE TEST PARAMETERS HERE -
-        3. - FUTURE TEST PARAMETERS HERE -
+        1. - Enable clients to explore further holiday destinations -
+        2. - Enable clients to book further holidays -
 
 -   ### Design
     -   #### Colour Scheme
-        -   Colour scheme being determined
+        -   I chose  a light colour scheme based on a light blue (Peter River) to give a holiday kind of feel to the site with a bright colour scheme.
     -   #### Typography
-        -   Montserrat was chosen as the main font as it complimented the design. Sans Serif was chosen as the back-up in the event the main font does not load. Future changes to typography possible.
+        -   Two fonts were chosen as for the project, Amatic SC and Architects Daughter. Both fonts are handwriting style fonts chosen to give a postcard feel to the site. Sans Serif was chosen as the back-up in the event the main font does not load. Future changes to typography possible.
     -   #### Imagery
-        -   TBD
+        -   Multiple images based on travel were chosen with a combination of images based on maps and actual destinations. One of the images is of a traveller overlooking a valley chosen to represent one of the owners of the fictional company.
 
 *   ### Wireframes
 
-    -   Home Page Wireframe A - [View](https://github.com/rdylanward/thegym.com/blob/master/assets/docs/wireframes/test.pdf)
-
-    -   Home Page Wireframe B - [View](https://github.com/rdylanward/thegym.com/blob/master/assets/docs/wireframes/test.pdf)
-
-    -   About Us Page Wireframe - [View](https://github.com/rdylanward/thegym.com/blob/master/assets/docs/wireframes/test.pdf)
-
-    -   Classes Page Wireframe - [View](https://github.com/rdylanward/thegym.com/blob/master/assets/docs/wireframes/test.pdf)
-
-    -   Gallery Page Wireframe - [View](https://github.com/rdylanward/thegym.com/blob/master/assets/docs/wireframes/test.pdf)
-
-    -   Membership Page Wireframe - [View](https://github.com/rdylanward/thegym.com/blob/master/assets/docs/wireframes/test.pdf)
-
-    -   Contact Page Wireframe - [View](https://github.com/rdylanward/thegym.com/blob/master/assets/docs/wireframes/test.pdf)
+    -   Wireframes PDF File - [View](https://github.com/rdylanward/thegym.com/blob/master/assets/docs/wireframes/MS2 Wireframes.pdf)
 
 ## Features
 
@@ -87,7 +77,7 @@ The scope of the project was to design a fictional travel website that calls on 
 
 -   ### Interactive elements include:
     -   #### A sticky menu that hides until you start to scroll the page
-    -   #### Modals that provide confirmation of the actions taken (i.e. Submitting the completed contact form, signing up for the newsletter and signing up for a membership)
+    -   #### Modals that provide confirmation of the actions taken (i.e. Signing up for the newsletter, booking a holiday and contacting the company)
 
 ## Technologies Used
 
@@ -119,8 +109,6 @@ The scope of the project was to design a fictional travel website that calls on 
     - Autoprefixer was used to ensure the code has all relevant vendor prefixes.
 1. [Tiny PNG:](https://tinypng.com/)
     - Tiny PNG was used to reduce the file size of the images to aid in faster loading times.
-1. [Pexels:](https://www.pexels.com/)
-    - Pexels was used to obtain royalty free images for the site.
 1. [Burst:](https://burst.shopify.com/)
     - Burst was used to obtain royalty free images for the site.
 1. [Flat UI Colors 2:](https://flatuicolors.com/)
