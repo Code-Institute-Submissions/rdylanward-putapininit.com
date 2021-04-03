@@ -57,7 +57,7 @@
 
 .bookings-header {
     grid-area: heading;
-    align-self: flex-start;
+    align-self: flex-end;
 }
 
 .bookings-header h1 {
@@ -93,13 +93,51 @@
     margin-top: 0.3rem;
 }
 
+.bookings-inputs-first {
+    grid-area: frst;
+}
+
+.bookings-inputs-last {
+    grid-area: last;
+}
+
+.bookings-inputs-phone {
+    grid-area: phon;
+}
+
+.bookings-inputs-email {
+    grid-area: mail;
+}
+
+.bookings-inputs-destination {
+    grid-area: dest;
+}
+
+.bookings-inputs-from-date {
+    grid-area: from;
+}
+
+.bookings-inputs-to-date {
+    grid-area: todt;
+}
+
+.bookings-inputs-comments {
+    grid-area: cmnt;
+}
+
+.bookings-inputs label {
+    font-size: 1.3rem;
+    justify-self: start;
+}
+
 .input-defaults {
     background: transparent;
     border: 0.25rem solid #fff2cc;
     border-radius: 0.7rem;
-    width: 26rem;
+    width: 100%;
     height: 1.95rem;
-    margin: 0.25rem 0rem;
+    justify-self: end;
+    margin: 0.35rem 0rem;
 }
 
 .input-defaults::placeholder {
@@ -107,6 +145,14 @@
     font-family: 'Architects Daughter', sans-serif;
     font-weight: 400;
     padding: 0rem 0.3rem;
+}
+
+#from-date {
+    width: 76%;
+}
+
+#to-date {
+    width: 76%;
 }
 
 .bookings-inputs textarea {
@@ -122,3 +168,177 @@
 .bookings-inputs-btn {
     margin-top: 0.5rem;
 }
+
+
+/**********************************************************************/
+/***                         Media Queries                          ***/
+/**********************************-***********************************/
+
+/****  screen and (max-width: 361px)  ****/
+
+@media screen and (max-width: 361px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-bookings-header {
+        grid-template-rows: 16% 25% 50% 9%;
+    }
+
+    /******************/
+    /***   HEADER   ***/
+    /******************/
+
+    .bookings-header h1 {
+        margin: 1rem 0rem;
+    }
+
+    .bookings-header p {
+        font-size: 1.5rem;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+
+    .bookings-form {
+        margin-top: 0rem;
+    }
+
+    #from-date {
+        width: 72%;
+    }
+
+    #to-date {
+        width: 72%;
+    }
+
+    .bookings-inputs textarea {
+        height: 3rem;
+    }
+}
+/****  /screen and (max-width: 361px)  ****/
+
+
+/****  /screen and (min-width: 768px)  ****/
+
+@media screen and (min-width: 768px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-bookings-header {
+        grid-template-columns: 15% 70% 15%;
+        grid-template-rows: 10% 25% 55% 10%;
+    }
+
+    /****************/
+    /***  HEADER  ***/
+    /****************/
+
+    .bookings-header {
+        grid-area: heading;
+    }
+
+    .input-defaults {
+        height: 2.9rem;
+    }
+
+    .bookings-inputs textarea {
+        height: 12rem;
+    }
+}
+/****  /screen and (min-width: 768px)  ****/
+
+
+/****  /screen and (min-width: 1024px)  ****/
+
+@media screen and (min-width: 1024px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-bookings-header {
+        grid-template-columns: 15% 70% 15%;
+        grid-template-rows: 10% 25% 55% 10%;
+    }
+
+    /****************/
+    /***  HEADER  ***/
+    /****************/
+
+    .bookings-header {
+        grid-area: heading;
+    }
+
+    .bookings-inputs label {
+        font-size: 1.5rem;
+    }
+
+    .input-defaults {
+        height: 3.3rem;
+    }
+
+    .input-defaults::placeholder {
+        font-size: 1.5rem;
+    }
+
+    .bookings-inputs textarea {
+        height: 16rem;
+    }
+
+    #from-date {
+        width: 81%;
+    }
+
+    #to-date {
+        width: 81%;
+    }
+
+    .bookings-inputs textarea::placeholder {
+        font-size: 1.5rem;
+    }
+}
+/****  /screen and (min-width: 1024px)  ****/
+
+
+/****  /screen and (min-width: 1200px)  ****/
+
+@media screen and (min-width: 1200px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-bookings-header {
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 10% 20% 60% 10%;
+    }
+
+    /****************/
+    /***  HEADER  ***/
+    /****************/
+
+    .input-defaults {
+        height: 2.9rem;
+    }
+
+    .bookings-inputs textarea {
+        height: 10rem;
+    }
+}
+/****  /screen and (min-width: 1200px)  ****/
+
+
+/****  /screen and (min-width: 1400px)  ****/
+
+@media screen and (min-width: 1400px) {
+    /****************/
+    /***  HEADER  ***/
+    /****************/
+
+    .input-defaults {
+        height: 3.3rem;
+    }
+
+    .bookings-inputs textarea {
+        height: 16rem;
+    }
+}
+/****  /screen and (min-width: 1400px)  ****/

@@ -673,7 +673,6 @@ body {
         "social"
         "news"
         "input"
-        /* "member" */
         "button";
     grid-template-rows: repeat(4, max-content);
 }
