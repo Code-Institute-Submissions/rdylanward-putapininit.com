@@ -22,7 +22,7 @@
 
 .container-contact-header {
     grid-area: contact-header;
-    background-image: linear-gradient(rgba(81, 232, 159, 0.8), rgba(81, 232, 159, 0.8)), url("../img/poolside-using-smart-phone.jpg");
+    background-image: linear-gradient(rgba(81, 232, 159, 0.7), rgba(81, 232, 159, 0.7)), url("../img/poolside-using-smart-phone.jpg");
     background-size: cover;
     background-position: center;
     font-family: 'Architects Daughter', sans-serif;
@@ -31,13 +31,13 @@
     height: 100vh;
     background-attachment: fixed;
     display: grid;
-    grid-template-columns: 7.5% 85% 7.5%;
+    grid-template-columns: 5% 90% 5%;
     grid-template-areas:
         ". . ."
         ". headr ."
         ". cntct ."
         ". . .";
-    grid-template-rows: 10% 35% 45% 10%;
+    grid-template-rows: 6% 35% 45% 14%;
     justify-items: center;
 }
 
@@ -57,7 +57,10 @@
 
 .contact-header {
     grid-area: headr;
+    background: rgba(0, 177, 92, 0.65);
+    border-radius: 0.7rem 0.7rem 0rem 0rem;
     align-self: flex-end;
+    padding: 0.5rem;
 }
 
 .contact-header h1 {
@@ -72,11 +75,14 @@
     font-size: 1.8rem;
     text-align: justify;
     line-height: 120%;
-    margin: 0.5rem 0rem 1.5rem 0rem;
+    padding: 0rem 1rem;
+    margin: 0.5rem 0rem 0rem 0rem;
 }
 
 .contact-form {
     grid-area: cntct;
+    background: rgba(0, 177, 92, 0.65);
+    border-radius: 0rem 0rem 0.7rem 0.7rem;
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas:
@@ -87,20 +93,20 @@
         "cmnt";
     grid-template-rows: repeat(5, min-content);
     text-align: center;
-    margin-top: 0.3rem;
+    padding-top: 1rem;
 }
 
 .input-contact-defaults {
     background: transparent;
-    border: 0.25rem solid #0665a2;
+    border: 0.25rem solid #fff2cc;
     border-radius: 0.7rem;
-    width: 26rem;
+    width: 95%;
     height: 1.95rem;
-    margin: 0.2rem 0rem;
+    margin: 0.3rem 0rem;
 }
 
 .input-contact-defaults::placeholder {
-    color: #0665a2;
+    color: #fff2cc;
     font-family: 'Architects Daughter', sans-serif;
     font-weight: 400;
     padding: 0rem 0.3rem;
@@ -119,3 +125,174 @@
 .contact-inputs-btn {
     margin-top: 0.5rem;
 }
+
+
+/**********************************************************************/
+/***                         Media Queries                          ***/
+/**********************************-***********************************/
+
+/****  screen and (max-width: 361px)  ****/
+
+@media screen and (max-width: 361px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-contact-header {
+        grid-template-rows: 15% 30% 50% 5%;
+    }
+}
+/****  /screen and (max-width: 361px)  ****/
+
+
+/****  /screen and (min-width: 768px)  ****/
+
+@media screen and (min-width: 768px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-contact-header {
+        grid-template-columns: 15% 70% 15%;
+        grid-template-rows: 25% 15% 35% 25%;
+    }
+
+    /****************/
+    /***  HEADER  ***/
+    /****************/
+
+    .contact-header h1 {
+        font-size: 4.1rem;
+    }
+
+    .input-contact-defaults {
+        height: 2.9rem;
+        margin: 0.4rem 0rem;
+    }
+
+    .input-contact-defaults::placeholder {
+        font-size: 1.5rem;
+    }
+
+    .contact-inputs textarea {
+        height: 8rem;
+    }
+
+    .contact-inputs textarea::placeholder {
+        font-size: 1.5rem;
+    }
+}
+/****  /screen and (min-width: 768px)  ****/
+
+
+/****  /screen and (min-width: 1024px)  ****/
+
+@media screen and (min-width: 1024px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-contact-header {
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 30% 10% 30% 30%;
+    }
+
+    /****************/
+    /***  HEADER  ***/
+    /****************/
+
+    .contact-header h1 {
+        font-size: 3.9rem;
+    }
+
+    .input-contact-defaults {
+        height: 2.9rem;
+    }
+
+    .input-contact-defaults::placeholder {
+        font-size: 1.5rem;
+    }
+
+    .contact-inputs textarea {
+        height: 12rem;
+    }
+}
+/****  /screen and (min-width: 1024px)  ****/
+
+
+/****  /screen and (min-width: 1200px)  ****/
+
+@media screen and (min-width: 1200px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-contact-header {
+        grid-template-rows: 20% 15% 50% 15%;
+    }
+
+    /****************/
+    /***  HEADER  ***/
+    /****************/
+
+    .contact-header h1 {
+        font-size: 3.9rem;
+    }
+
+    .input-contact-defaults {
+        height: 2.9rem;
+    }
+
+    .input-contact-defaults::placeholder {
+        font-size: 1.5rem;
+    }
+
+    .contact-inputs textarea {
+        height: 8rem;
+    }
+}
+/****  /screen and (min-width: 1200px)  ****/
+
+
+/****  /screen and (min-width: 1400px)  ****/
+
+@media screen and (min-width: 1400px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-contact-header {
+        grid-template-rows: 20% 15% 40% 25%;
+    }
+
+    /****************/
+    /***  HEADER  ***/
+    /****************/
+
+    .contact-inputs textarea {
+        height: 12rem;
+    }
+}
+/****  /screen and (min-width: 1400px)  ****/
+
+
+/****  /screen and (min-width: 1600px)  ****/
+
+@media screen and (min-width: 1600px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-contact-header {
+        grid-template-columns: 30% 40% 30%;
+    }
+
+    /****************/
+    /***  HEADER  ***/
+    /****************/
+
+    .contact-inputs textarea {
+        height: 10rem;
+    }
+}
+/****  /screen and (min-width: 1600px)  ****/

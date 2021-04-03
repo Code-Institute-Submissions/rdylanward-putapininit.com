@@ -27,7 +27,7 @@
 }
 
 .light-yellow {
-    color: #fff2cc; /* #ffe088;*/
+    color: #fff2cc;
 }
 
 .medium-light-yellow {
@@ -78,7 +78,7 @@
     overflow: hidden;
 }
 
-/* .btn-flat-orange:hover {
+.btn-flat-orange:hover {
     background: #fff2cc;
     color: #ffb659;
     border: 0.3rem solid #ffe9aa;
@@ -89,10 +89,9 @@
     background: #ff9003;
     color: #fff2cc;
     transition: all 0.3s;
-} */
+}
 
 .ripple {
-    /* position: absolute; */
     width: 0;
     height: 0;
     background-color: #ffe9aa;
