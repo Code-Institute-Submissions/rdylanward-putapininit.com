@@ -391,6 +391,10 @@ body {
     font-weight: 600;
 }
 
+.navbar-menu-link:hover {
+    color: #ffd459;
+}
+
 .navbar-menu-link:active {
     color: rgba(255, 212, 89, 0.6);
     transition: color 0.25s;
