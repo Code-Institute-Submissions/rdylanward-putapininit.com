@@ -89,7 +89,7 @@
     border-radius: 0.7rem;
     align-self: center;
     justify-self: end;
-    padding: 0rem 2rem;
+    padding: 0rem 2.5rem;
 }
 
 .destinations-header h1 {
@@ -97,14 +97,14 @@
     font-size: 4.5rem;
     font-weight: 700;
     text-align: center;
-    margin: 1rem 0rem;
+    margin: 1.3rem 0rem; 1rem 0rem;
 }
 
 .destinations-header p {
     font-size: 1.85rem;
     text-align: justify;
     line-height: 120%;
-    margin: 0.5rem 0rem 1.5rem 0rem;
+    margin: 0.5rem 0rem 1.7rem 0rem;
 }
 
 
@@ -187,12 +187,20 @@
 /****  /screen and (min-width: 768px)  ****/
 
 @media screen and (min-width: 768px) {
-    /****************/
-    /***  HEADER  ***/
-    /****************/
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
 
     .container-destinations-header {
         grid-template-columns: 10% 80% 10%;
+    }
+
+    /******************/
+    /***   HEADER   ***/
+    /******************/
+
+    .destinations-header {
+        padding: 0rem 3rem;
     }
 
     /***************/
@@ -209,9 +217,9 @@
 /****  /screen and (min-width: 1024px)  ****/
 
 @media screen and (min-width: 1024px) {
-    /****************/
-    /***  HEADER  ***/
-    /****************/
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
 
     .container-destinations-header {
         grid-template-columns: 15% 70% 15%;
@@ -231,6 +239,14 @@
 /****  /screen and (min-width: 1200px)  ****/
 
 @media screen and (min-width: 1200px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-destinations-header {
+        grid-template-columns: 20% 60% 20%;
+    }
+
     /***************/
     /***   MAP   ***/
     /***************/
@@ -245,6 +261,14 @@
 /****  /screen and (min-width: 1400px)  ****/
 
 @media screen and (min-width: 1400px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-destinations-header {
+        grid-template-columns: 25% 50% 25%;
+    }
+
     /***************/
     /***   MAP   ***/
     /***************/
@@ -254,3 +278,25 @@
     }
 }
 /****  /screen and (min-width: 1400px)  ****/
+
+
+/****  /screen and (min-width: 1600px)  ****/
+
+@media screen and (min-width: 1600px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-destinations-header {
+        grid-template-columns: 30% 40% 30%;
+    }
+
+    /***************/
+    /***   MAP   ***/
+    /***************/
+
+    .container-map {
+        grid-template-rows: 5% 80% 12.5%;
+    }
+}
+/****  /screen and (min-width: 1600px)  ****/

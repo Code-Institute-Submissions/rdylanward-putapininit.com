@@ -12,9 +12,6 @@
         dateField2 = document.querySelector('#to-date');
     dateField1.value = currentDate;
     dateField2.value = currentDate;
-    console.log(dateField1.value);
-    console.log(dateField2.value);
-
 })()
 
 
