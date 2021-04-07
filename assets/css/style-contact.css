@@ -262,7 +262,7 @@
     /***********************/
 
     .container-contact-header {
-        grid-template-rows: 20% 15% 40% 25%;
+        grid-template-rows: 20% 15% 45% 20%;
     }
 
     /****************/
@@ -285,6 +285,7 @@
 
     .container-contact-header {
         grid-template-columns: 30% 40% 30%;
+        grid-template-rows: 20% 15% 40% 25%;
     }
 
     /****************/
@@ -292,7 +293,30 @@
     /****************/
 
     .contact-inputs textarea {
-        height: 10rem;
+        height: 14rem;
     }
 }
 /****  /screen and (min-width: 1600px)  ****/
+
+
+/****  /screen and (min-width: 1900px)  ****/
+
+@media screen and (min-width: 1900px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-contact-header {
+        grid-template-columns: 30% 40% 30%;
+        grid-template-rows: 20% 15% 40% 25%;
+    }
+
+    /****************/
+    /***  HEADER  ***/
+    /****************/
+
+    .contact-inputs textarea {
+        height: 10.5rem;
+    }
+}
+/****  /screen and (min-width: 1900px)  ****/

@@ -14,8 +14,8 @@
         <!--  EMAIL MODAL  -->
         <div class="container-modal-email" id="modal-email-container">
             <div class="modal-email-box" id="modal-email-box">
-                <div class="modal-email-txt font-green">
-                    <p>Thank you for signing up to our newsletter. You should receive your first edition soon.</p>
+                <div class="modal-email-txt light-yellow">
+                    <p id="modal-email-txt"></p>
                 </div>
                 <div class="modal-email-btn">
 
@@ -173,9 +173,9 @@
                         <p class="footer-newsletter-label">Sign up for our newsletter!</p>
                     </div>
                     <div class="footer-input">
-                        <form class="footer-input-form" method="get">
-                            <input class="footer-input-email font-light" id="footer-email" type="email" placeholder="Enter email...">
-                            <input class="btn btn-flat-light footer-input-btn" id="modal-email-submit" type="Button" value="Sign Up!">
+                        <form class="footer-input-form" id="modal-email-form" method="get">
+                            <input class="footer-input-email font-light" id="modal-email-input" type="email" placeholder="Enter email...">
+                            <input class="btn btn-flat-light footer-input-btn" id="modal-email-submit" type="submit" value="Sign Up!">
                         </form>
                     </div>
                 </div>
@@ -217,6 +217,11 @@
             let modalEmailBox = document.getElementById("modal-email-box");
             let modalEmailBtn = document.getElementById("modal-email-btn");
 
+            let footerEmail = document.getElementById('footer-email');
+            let modalText = document.getElementById('modal-email-txt');
+            let withEmail = document.createTextNode("Thank you for signing up to our newsletter. You should receive your first edition soon.");
+            let noEmail = document.createTextNode("Please enter an email to proceed.");
+
 
             /**********************************************************************/
             /***                         STICKY NAVBAR                          ***/
@@ -257,12 +262,19 @@
 
             /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
                and repurposed to aid in the function of the email modal box. When the user clicks on the button, it opens the modal */
+
             modalEmailSubmit.onclick = function() {
+                if (footerEmail.nodeValue != null) {
+                    modalText.appendChild(withEmail);
+                } else {
+                    modalText.appendChild(noEmail);
+                }
+
                 modalEmailContainer.style.display = "grid";
                 modalEmailBox.style.display = "grid";
             }
 
-            /* When the user clicks on 'Close' in the modal */
+            /* When the user clicks on 'OK' in the modal */
             modalEmailBtn.onclick = function() {
                 modalEmailContainer.style.display = "none";
                 modalEmailBox.style.display = "none";
