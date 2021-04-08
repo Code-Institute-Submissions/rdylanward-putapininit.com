@@ -729,13 +729,15 @@ body {
     padding: 0rem;
 }
 
-.footer-input-email {
+.footer-input-email,
+.footer-input-email:focus {
     font-size: 1.4rem;
     background-color: transparent;
     border: 0.3rem solid #fff2cc;
     width: 22rem;
     height: 2.4rem;
     border-radius: 0.7rem 0rem 0rem 0.7rem;
+    padding: 0rem 0.6rem;
 }
 
 .footer-input-email::placeholder {
