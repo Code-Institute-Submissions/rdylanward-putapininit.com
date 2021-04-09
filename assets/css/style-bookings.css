@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /**********************************************************************/
 /***                          Basic Setup                           ***/
 /**********************************-***********************************/
@@ -11,13 +18,17 @@
     top: 0rem;
     left: 0rem;
     display: none;
+    -ms-grid-columns: 7.3% 85% 7.7%;
     grid-template-columns: 7.3% 85% 7.7%;
-    grid-template-areas:
+        grid-template-areas:
         ". . ."
         ". booking-modal ."
         ". . .";
+    -ms-grid-rows: 15% 70% 15%;
     grid-template-rows: 15% 70% 15%;
     place-content: center center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
     z-index: 15;
 }
@@ -28,11 +39,15 @@
 
 .container-bookings {
     position: absolute;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-    grid-template-areas:
+        grid-template-areas:
         "bookings-header"
         "footer";
+    -ms-grid-rows: (min-content)[2];
+    grid-template-rows: repeat(2, -webkit-min-content);
     grid-template-rows: repeat(2, min-content);
     background-color: #f2f0e5;
     width: 100%;
@@ -41,7 +56,11 @@
 }
 
 .container-bookings-header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: bookings-header;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(6, 101, 162, 0.8)), to(rgba(6, 101, 162, 0.8))), url("../img/decorated-chinese-store-front.jpg");
+    background-image: -o-linear-gradient(rgba(6, 101, 162, 0.8), rgba(6, 101, 162, 0.8)), url("../img/decorated-chinese-store-front.jpg");
     background-image: linear-gradient(rgba(6, 101, 162, 0.8), rgba(6, 101, 162, 0.8)), url("../img/decorated-chinese-store-front.jpg");
     background-size: cover;
     background-position: center;
@@ -50,13 +69,16 @@
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 7.5% 85% 7.5%;
     grid-template-columns: 7.5% 85% 7.5%;
-    grid-template-areas:
+        grid-template-areas:
         ". . ."
         ". heading ."
         ". booking ."
         ". . .";
+    -ms-grid-rows: 10% 35% 45% 10%;
     grid-template-rows: 10% 35% 45% 10%;
     justify-items: center;
 }
@@ -68,26 +90,38 @@
 
 .modal-booking-box,
 #modal-booking-box {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: booking-modal;
     background: rgba(6, 101, 162, 0.85);
     height: 35vh;
     display: none;
+    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-    grid-template-areas:
+        grid-template-areas:
         "txt-book-modal"
         "btn-book-modal";
+    -ms-grid-rows: 75% 25%;
     grid-template-rows: 75% 25%;
     border: 0.3rem solid #9095f0;
     border-radius: 1.5rem;;
     overflow: hidden;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
     place-self: center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
     margin-bottom: 2.5rem;
     z-index: 20;
 }
 
 .modal-booking-txt {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: txt-book-modal;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
     place-self: center center;
 }
 
@@ -99,7 +133,11 @@
 }
 
 .modal-booking-btn {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: btn-book-modal;
+    -ms-grid-row-align: start;
+    -ms-grid-column-align: center;
     place-self: start center;
 }
 
@@ -118,6 +156,8 @@
 /**********************************-***********************************/
 
 .bookings-header {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: heading;
     align-self: flex-end;
 }
@@ -138,10 +178,14 @@
 }
 
 .bookings-form {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
     grid-area: booking;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-    grid-template-areas:
+        grid-template-areas:
         "frst"
         "last"
         "phon"
@@ -150,40 +194,58 @@
         "frm"
         "todt"
         "cmnt";
+    -ms-grid-rows: (min-content)[8];
+    grid-template-rows: repeat(8, -webkit-min-content);
     grid-template-rows: repeat(8, min-content);
     text-align: center;
     margin-top: 0.3rem;
 }
 
 .bookings-inputs-first {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: frst;
 }
 
 .bookings-inputs-last {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: last;
 }
 
 .bookings-inputs-phone {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: phon;
 }
 
 .bookings-inputs-email {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: mail;
 }
 
 .bookings-inputs-destination {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
     grid-area: dest;
 }
 
 .bookings-inputs-from {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
     grid-area: frm;
 }
 
 .bookings-inputs-to {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
     grid-area: todt;
 }
 
 .bookings-inputs-comments {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
     grid-area: cmnt;
 }
 
@@ -196,9 +258,38 @@
     border-radius: 0.7rem;
     width: 94%;
     height: 2.1rem;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
     padding: 0rem 0.6rem;
     margin: 0.35rem 0rem;
+}
+
+.contact-input-defaults::-webkit-input-placeholder {
+    color: #fff2cc;
+    font-family: 'Architects Daughter', sans-serif;
+    font-weight: 400;
+    padding: 0rem 0.3rem;
+}
+
+.contact-input-defaults::-moz-placeholder {
+    color: #fff2cc;
+    font-family: 'Architects Daughter', sans-serif;
+    font-weight: 400;
+    padding: 0rem 0.3rem;
+}
+
+.contact-input-defaults:-ms-input-placeholder {
+    color: #fff2cc;
+    font-family: 'Architects Daughter', sans-serif;
+    font-weight: 400;
+    padding: 0rem 0.3rem;
+}
+
+.contact-input-defaults::-ms-input-placeholder {
+    color: #fff2cc;
+    font-family: 'Architects Daughter', sans-serif;
+    font-weight: 400;
+    padding: 0rem 0.3rem;
 }
 
 .contact-input-defaults::placeholder {
@@ -211,7 +302,8 @@
 .contact-input-labels {
     font-size: 1.3rem;
     width: 27%;
-    justify-self: start;
+    -ms-grid-column-align: start;
+        justify-self: start;
 }
 
 .contact-input-dates {
@@ -222,6 +314,30 @@
 .contact-input-textarea {
     font-size: 1.7rem;
     height: 3.7rem;
+}
+
+.contact-input-textarea::-webkit-input-placeholder {
+    font-family: 'Architects Daughter', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.contact-input-textarea::-moz-placeholder {
+    font-family: 'Architects Daughter', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.contact-input-textarea:-ms-input-placeholder {
+    font-family: 'Architects Daughter', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.contact-input-textarea::-ms-input-placeholder {
+    font-family: 'Architects Daughter', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
 }
 
 .contact-input-textarea::placeholder {
@@ -247,6 +363,7 @@
     /***********************/
 
     .container-bookings-header {
+        -ms-grid-rows: 16% 25% 50% 9%;
         grid-template-rows: 16% 25% 50% 9%;
     }
 
@@ -290,8 +407,70 @@
     /***********************/
 
     .container-bookings-header {
+        -ms-grid-columns: 15% 70% 15%;
         grid-template-columns: 15% 70% 15%;
+        -ms-grid-rows: 10% 25% 55% 10%;
         grid-template-rows: 10% 25% 55% 10%;
+    }
+
+    .container-bookings-header > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-bookings-header > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-bookings-header > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-bookings-header > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-bookings-header > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-bookings-header > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-bookings-header > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-bookings-header > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-bookings-header > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+
+    .container-bookings-header > *:nth-child(10) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+    }
+
+    .container-bookings-header > *:nth-child(11) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 2;
+    }
+
+    .container-bookings-header > *:nth-child(12) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 3;
     }
 
     /****************/
@@ -299,6 +478,8 @@
     /****************/
 
     .bookings-header {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
         grid-area: heading;
     }
 
@@ -329,8 +510,70 @@
     /***********************/
 
     .container-bookings-header {
+        -ms-grid-columns: 15% 70% 15%;
         grid-template-columns: 15% 70% 15%;
+        -ms-grid-rows: 10% 25% 55% 10%;
         grid-template-rows: 10% 25% 55% 10%;
+    }
+
+    .container-bookings-header > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-bookings-header > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-bookings-header > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-bookings-header > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-bookings-header > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-bookings-header > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-bookings-header > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-bookings-header > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-bookings-header > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+
+    .container-bookings-header > *:nth-child(10) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+    }
+
+    .container-bookings-header > *:nth-child(11) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 2;
+    }
+
+    .container-bookings-header > *:nth-child(12) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 3;
     }
 
     /****************/
@@ -338,11 +581,29 @@
     /****************/
 
     .bookings-header {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
         grid-area: heading;
     }
 
     .contact-input-defaults {
         height: 3.3rem;
+    }
+
+    .contact-input-defaults::-webkit-input-placeholder {
+        font-size: 1.5rem;
+    }
+
+    .contact-input-defaults::-moz-placeholder {
+        font-size: 1.5rem;
+    }
+
+    .contact-input-defaults:-ms-input-placeholder {
+        font-size: 1.5rem;
+    }
+
+    .contact-input-defaults::-ms-input-placeholder {
+        font-size: 1.5rem;
     }
 
     .contact-input-defaults::placeholder {
@@ -362,6 +623,22 @@
         height: 16rem;
     }
 
+    .contact-input-textarea::-webkit-input-placeholder {
+        font-size: 1.5rem;
+    }
+
+    .contact-input-textarea::-moz-placeholder {
+        font-size: 1.5rem;
+    }
+
+    .contact-input-textarea:-ms-input-placeholder {
+        font-size: 1.5rem;
+    }
+
+    .contact-input-textarea::-ms-input-placeholder {
+        font-size: 1.5rem;
+    }
+
     .contact-input-textarea::placeholder {
         font-size: 1.5rem;
     }
@@ -377,8 +654,70 @@
     /***********************/
 
     .container-bookings-header {
+        -ms-grid-columns: 20% 60% 20%;
         grid-template-columns: 20% 60% 20%;
+        -ms-grid-rows: 10% 20% 60% 10%;
         grid-template-rows: 10% 20% 60% 10%;
+    }
+
+    .container-bookings-header > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-bookings-header > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-bookings-header > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-bookings-header > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-bookings-header > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-bookings-header > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-bookings-header > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-bookings-header > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-bookings-header > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+
+    .container-bookings-header > *:nth-child(10) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+    }
+
+    .container-bookings-header > *:nth-child(11) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 2;
+    }
+
+    .container-bookings-header > *:nth-child(12) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 3;
     }
 
     /****************/

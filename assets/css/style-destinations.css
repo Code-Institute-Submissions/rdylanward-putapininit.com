@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /**********************************************************************/
 /***                          Basic Setup                           ***/
 /**********************************-***********************************/
@@ -10,12 +17,16 @@
     position: absolute;
     font-family: 'Architects Daughter', sans-serif;
     font-weight: 400;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    grid-template-areas:
+        grid-template-areas:
         "destinations-header"
         "destinations-map"
         "footer";
+    -ms-grid-rows: (min-content)[3];
+    grid-template-rows: repeat(3, -webkit-min-content);
     grid-template-rows: repeat(3, min-content);
     background-color: #f2f0e5;
     width: 100%;
@@ -24,36 +35,50 @@
 }
 
 .container-destinations-header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: destinations-header;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 189, 3, 0.5)), to(rgba(255, 189, 3, 0.5))), url("../img/travel-plans-are-the-best-plans.jpg");
+    background-image: -o-linear-gradient(rgba(255, 189, 3, 0.5), rgba(255, 189, 3, 0.5)), url("../img/travel-plans-are-the-best-plans.jpg");
     background-image: linear-gradient(rgba(255, 189, 3, 0.5), rgba(255, 189, 3, 0.5)), url("../img/travel-plans-are-the-best-plans.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
-    grid-template-areas:
+        grid-template-areas:
         ". . ."
         ". dest-heading ."
         ". . .";
+    -ms-grid-rows: 10% 80% 10%;
     grid-template-rows: 10% 80% 10%;
 }
 
 .container-map {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: destinations-map;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(6, 101, 162, 0.6)), to(rgba(6, 101, 162, 0.6))), url("../img/a-seat-with-a-beachside-view.jpg");
+    background-image: -o-linear-gradient(rgba(6, 101, 162, 0.6), rgba(6, 101, 162, 0.6)), url("../img/a-seat-with-a-beachside-view.jpg");
     background-image: linear-gradient(rgba(6, 101, 162, 0.6), rgba(6, 101, 162, 0.6)), url("../img/a-seat-with-a-beachside-view.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
-    grid-template-areas:
+        grid-template-areas:
         ". . ."
         ". map-display ."
         ". map-btn .";
+    -ms-grid-rows: 2.5% 82.5% 15%;
     grid-template-rows: 2.5% 82.5% 15%;
 }
 
@@ -84,11 +109,15 @@
 /**********************************-***********************************/
 
 .destinations-header {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: dest-heading;
     background: rgba(254, 188, 0, 0.85);
     border-radius: 0.7rem;
-    align-self: center;
-    justify-self: end;
+    -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: end;
+        justify-self: end;
     padding: 0rem 2.5rem;
 }
 
@@ -97,7 +126,7 @@
     font-size: 4.5rem;
     font-weight: 700;
     text-align: center;
-    margin: 1.3rem 0rem; 1rem 0rem;
+    margin: 1.3rem 0rem 1rem 0rem;
 }
 
 .destinations-header p {
@@ -113,21 +142,29 @@
 /**********************************-***********************************/
 
 .map-window {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: map-display;
     width: 100%;
     height: 100%;
     border: 0rem solid transparent;
     border-radius: 0.7rem;
-    justify-self: start;
+    -ms-grid-column-align: start;
+        justify-self: start;
 }
 
 .map-button {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
     grid-area: map-btn;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    grid-template-areas:
+        grid-template-areas:
         "txt"
         "btn";
+    -ms-grid-rows: 40% 60%;
     grid-template-rows: 40% 60%;
     margin-bottom: 0.5rem;
 }
@@ -145,15 +182,23 @@
 }
 
 .map-button-text {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: txt;
     font-size: 1.8rem;
     text-align: justify;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
     place-self: center center;
     margin: 0rem;
 }
 
 .map-btn {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: btn;
+    -ms-grid-row-align: start;
+    -ms-grid-column-align: center;
     place-self: start center;
 }
 
@@ -170,6 +215,7 @@
     /***********************/
 
     .container-map {
+        -ms-grid-columns: 2.5% 95% 2.5%;
         grid-template-columns: 2.5% 95% 2.5%;
     }
 
@@ -192,6 +238,7 @@
     /***********************/
 
     .container-destinations-header {
+        -ms-grid-columns: 10% 80% 10%;
         grid-template-columns: 10% 80% 10%;
     }
 
@@ -208,6 +255,7 @@
     /***************/
 
     .container-map {
+        -ms-grid-rows: 5% 82.5% 12.5%;
         grid-template-rows: 5% 82.5% 12.5%;
     }
 }
@@ -222,6 +270,7 @@
     /***********************/
 
     .container-destinations-header {
+        -ms-grid-columns: 15% 70% 15%;
         grid-template-columns: 15% 70% 15%;
     }
 
@@ -244,6 +293,7 @@
     /***********************/
 
     .container-destinations-header {
+        -ms-grid-columns: 20% 60% 20%;
         grid-template-columns: 20% 60% 20%;
     }
 
@@ -252,6 +302,7 @@
     /***************/
 
     .container-map {
+        -ms-grid-rows: 5% 77.5% 15%;
         grid-template-rows: 5% 77.5% 15%;
     }
 }
@@ -266,6 +317,7 @@
     /***********************/
 
     .container-destinations-header {
+        -ms-grid-columns: 25% 50% 25%;
         grid-template-columns: 25% 50% 25%;
     }
 
@@ -274,6 +326,7 @@
     /***************/
 
     .container-map {
+        -ms-grid-rows: 5% 80% 12.5%;
         grid-template-rows: 5% 80% 12.5%;
     }
 }
@@ -288,6 +341,7 @@
     /***********************/
 
     .container-destinations-header {
+        -ms-grid-columns: 30% 40% 30%;
         grid-template-columns: 30% 40% 30%;
     }
 
@@ -296,6 +350,7 @@
     /***************/
 
     .container-map {
+        -ms-grid-rows: 5% 80% 12.5%;
         grid-template-rows: 5% 80% 12.5%;
     }
 }
