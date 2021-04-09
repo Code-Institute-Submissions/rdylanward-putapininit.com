@@ -18,13 +18,11 @@
     top: 0rem;
     left: 0rem;
     display: none;
-    -ms-grid-columns: 7.3% 85% 7.7%;
     grid-template-columns: 7.3% 85% 7.7%;
         grid-template-areas:
         ". . ."
         ". booking-modal ."
         ". . .";
-    -ms-grid-rows: 15% 70% 15%;
     grid-template-rows: 15% 70% 15%;
     place-content: center center;
     -webkit-transition: all 0.3s;
@@ -39,14 +37,11 @@
 
 .container-bookings {
     position: absolute;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
         grid-template-areas:
         "bookings-header"
         "footer";
-    -ms-grid-rows: (min-content)[2];
     grid-template-rows: repeat(2, -webkit-min-content);
     grid-template-rows: repeat(2, min-content);
     background-color: #f2f0e5;
@@ -56,11 +51,7 @@
 }
 
 .container-bookings-header {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: bookings-header;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(6, 101, 162, 0.8)), to(rgba(6, 101, 162, 0.8))), url("../img/decorated-chinese-store-front.jpg");
-    background-image: -o-linear-gradient(rgba(6, 101, 162, 0.8), rgba(6, 101, 162, 0.8)), url("../img/decorated-chinese-store-front.jpg");
     background-image: linear-gradient(rgba(6, 101, 162, 0.8), rgba(6, 101, 162, 0.8)), url("../img/decorated-chinese-store-front.jpg");
     background-size: cover;
     background-position: center;
@@ -69,16 +60,13 @@
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 7.5% 85% 7.5%;
     grid-template-columns: 7.5% 85% 7.5%;
         grid-template-areas:
         ". . ."
         ". heading ."
         ". booking ."
         ". . .";
-    -ms-grid-rows: 10% 35% 45% 10%;
     grid-template-rows: 10% 35% 45% 10%;
     justify-items: center;
 }
@@ -90,24 +78,18 @@
 
 .modal-booking-box,
 #modal-booking-box {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
     grid-area: booking-modal;
     background: rgba(6, 101, 162, 0.85);
     height: 35vh;
     display: none;
-    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
         grid-template-areas:
         "txt-book-modal"
         "btn-book-modal";
-    -ms-grid-rows: 75% 25%;
     grid-template-rows: 75% 25%;
     border: 0.3rem solid #9095f0;
     border-radius: 1.5rem;;
     overflow: hidden;
-    -ms-grid-row-align: center;
-    -ms-grid-column-align: center;
     place-self: center;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -117,11 +99,7 @@
 }
 
 .modal-booking-txt {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: txt-book-modal;
-    -ms-grid-row-align: center;
-    -ms-grid-column-align: center;
     place-self: center center;
 }
 
@@ -133,11 +111,7 @@
 }
 
 .modal-booking-btn {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
     grid-area: btn-book-modal;
-    -ms-grid-row-align: start;
-    -ms-grid-column-align: center;
     place-self: start center;
 }
 
@@ -156,8 +130,6 @@
 /**********************************-***********************************/
 
 .bookings-header {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
     grid-area: heading;
     align-self: flex-end;
 }
@@ -178,12 +150,8 @@
 }
 
 .bookings-form {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
     grid-area: booking;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
         grid-template-areas:
         "frst"
@@ -194,7 +162,6 @@
         "frm"
         "todt"
         "cmnt";
-    -ms-grid-rows: (min-content)[8];
     grid-template-rows: repeat(8, -webkit-min-content);
     grid-template-rows: repeat(8, min-content);
     text-align: center;
