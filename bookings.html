@@ -28,6 +28,22 @@
         </div>
         <!--  /EMAIL MODAL  -->
 
+        <!--  BOOKING MODAL  -->
+        <div class="container-modal-booking" id="modal-booking-container">
+            <div class="modal-booking-box" id="modal-booking-box">
+                <div class="modal-booking-txt light-yellow">
+                    <p>Thank you for placing a booking with us. A representative will get back to you shortly with all of the details.</p>
+                </div>
+                <div class="modal-booking-btn">
+
+                    <!-- The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
+                       and repurposed to aid in the function of the modal -->
+                    <button class="btn btn-flat-orange" id="modal-booking-btn">OK</button>
+                </div>
+            </div>
+        </div>
+        <!--  /BOOKING MODAL  -->
+
         <!--  NAVBAR  -->
         <nav class="container-navbar light-yellow" id="navbar">
             <div class="navbar-brand">
@@ -89,17 +105,17 @@
                 </div>
                 <div class="bookings-form">
                     <form class="bookings-inputs" method="get">
-                        <input class="bookings-inputs-first contact-input-defaults light-yellow" type="text" id="first-name" name="first-name" placeholder="First Name...">
-                        <input class="bookings-inputs-last contact-input-defaults light-yellow" type="text" id="last-name" name="last-name" placeholder="Last Name...">
-                        <input class="bookings-inputs-phone contact-input-defaults light-yellow" type="text" id="phone" name="phone" placeholder="Phone Number...">
-                        <input class="bookings-inputs-email contact-input-defaults light-yellow" type="email"  id="email" placeholder="Enter Email...">
-                        <input class="bookings-inputs-destination contact-input-defaults light-yellow" type="text" id="destinations" name="destinations" placeholder="Destination...">
+                        <input class="bookings-inputs-first contact-input-defaults light-yellow" type="text" id="bookings-first-name" name="first-name" placeholder="First Name..." required>
+                        <input class="bookings-inputs-last contact-input-defaults light-yellow" type="text" id="bookings-last-name" name="last-name" placeholder="Last Name..." required>
+                        <input class="bookings-inputs-phone contact-input-defaults light-yellow" type="text" id="bookings-phone" name="phone" placeholder="Phone Number..." required>
+                        <input class="bookings-inputs-email contact-input-defaults light-yellow" type="email" id="bookings-email" placeholder="Enter Email..." required>
+                        <input class="bookings-inputs-destination contact-input-defaults light-yellow" type="text" id="bookings-destinations" name="destinations" placeholder="Destination..." required>
                         <label class="bookings-label-from contact-input-labels light-yellow" for="from-date">Departing:&nbsp</label>
-                        <input class="bookings-inputs-from contact-input-defaults contact-input-dates light-yellow" type="date" id="from-date" name="from-date">
+                        <input class="bookings-inputs-from contact-input-defaults contact-input-dates light-yellow" type="date" id="bookings-from-date" name="from-date" required>
                         <label class="bookings-label-to contact-input-labels light-yellow" for="to-date">Returning:&nbsp</label>
-                        <input class="bookings-inputs-to contact-input-defaults contact-input-dates light-yellow" type="date" id="to-date" name="to-date">
-                        <textarea class="bookings-inputs-comments contact-input-defaults contact-input-textarea light-yellow" id="comments" name="comments" placeholder="Enter any comments or requests..."></textarea>
-                        <input class="btn btn-flat-orange contact-inputs-btn" type="button" id="btn-orange" value="Book Now!">
+                        <input class="bookings-inputs-to contact-input-defaults contact-input-dates light-yellow" type="date" id="bookings-to-date" name="to-date" required>
+                        <textarea class="bookings-inputs-comments contact-input-defaults contact-input-textarea light-yellow" id="bookings-comments" name="comments" placeholder="Enter any comments or requests..."></textarea>
+                        <input class="btn btn-flat-orange contact-inputs-btn" type="Button" id="bookings-inputs-btn" value="Send Now!">
                     </form>
                 </div>
             </header>
@@ -180,6 +196,11 @@
             let navbarMobile = document.getElementById("navbar-mobile");
             let sticky = navbar.offsetHeight;
 
+            let modalBookingSubmit = document.getElementById("bookings-inputs-btn");
+            let modalBookingContainer = document.getElementById("modal-booking-container");
+            let modalBookingBox = document.getElementById("modal-booking-box");
+            let modalBookingBtn = document.getElementById("modal-booking-btn");
+
             let modalEmailSubmit = document.getElementById("modal-email-submit");
             let modalEmailContainer = document.getElementById("modal-email-container");
             let modalEmailBox = document.getElementById("modal-email-box");
@@ -216,6 +237,24 @@
                 } else {
                     navbarMobile.style.display = "none";
                 }
+            }
+
+
+            /**********************************************************************/
+            /***                        BOOKINGS MODAL BOX                      ***/
+            /**********************************-***********************************/
+
+            /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
+               and repurposed to aid in the function of the email modal box. When the user clicks on the button, it opens the modal */
+            modalBookingSubmit.onclick = function() {
+                modalBookingContainer.style.display = "grid";
+                modalBookingBox.style.display = "grid";
+            }
+
+            /* When the user clicks on 'Close' in the modal */
+            modalBookingBtn.onclick = function() {
+                modalBookingContainer.style.display = "none";
+                modalBookingBox.style.display = "none";
             }
 
 

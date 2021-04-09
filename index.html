@@ -15,7 +15,7 @@
         <div class="container-modal-email" id="modal-email-container">
             <div class="modal-email-box" id="modal-email-box">
                 <div class="modal-email-txt light-yellow">
-                    <p id="modal-email-txt"></p>
+                    <p>Thank you for signing up to our newsletter. You should receive your first edition soon.</p>
                 </div>
                 <div class="modal-email-btn">
 
@@ -175,7 +175,7 @@
                     <div class="footer-input">
                         <form class="footer-input-form" id="modal-email-form" method="get">
                             <input class="footer-input-email font-light" id="modal-email-input" type="email" placeholder="Enter email...">
-                            <input class="btn btn-flat-light footer-input-btn" id="modal-email-submit" type="submit" value="Sign Up!">
+                            <input class="btn btn-flat-light footer-input-btn" id="modal-email-submit" type="Button" value="Sign Up!">
                         </form>
                     </div>
                 </div>
@@ -262,34 +262,12 @@
 
             /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
                and repurposed to aid in the function of the email modal box. When the user clicks on the button, it opens the modal */
-
-            document.getElementById("modal-email-submit").addEventListener("click", function(event){
-                const emailInput = document.getElementById('modal-email-input').value;
-                console.log(emailInput);
-
-                let recipient = 'mailto:r.dylan.ward@icloud.com?';
-                let subject = 'subject=Sign Up to Put A Pin In It Newsletter';
-                let body = '&body=' + emailInput;
-                let fullMailText = recipient + subject + body;
-
-                console.log(fullMailText);
-
-                if (emailInput.search('@') = 0) {
-                    console.log(emailInput);
-                    modalText.appendChild(withEmail);
-                } else {
-                    modalText.appendChild(noEmail);
-                }
-
-                document.getElementById('modal-email-input').value = '';
-
+            modalEmailSubmit.onclick = function() {
                 modalEmailContainer.style.display = "grid";
                 modalEmailBox.style.display = "grid";
+            }
 
-                event.preventDefault();
-            });
-
-            /* When the user clicks on 'OK' in the modal */
+            /* When the user clicks on 'Close' in the modal */
             modalEmailBtn.onclick = function() {
                 modalEmailContainer.style.display = "none";
                 modalEmailBox.style.display = "none";

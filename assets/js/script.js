@@ -8,8 +8,8 @@
 
 (function () {
     let currentDate = new Date().toISOString().substring(0, 10),
-        dateField1 = document.querySelector('#from-date'),
-        dateField2 = document.querySelector('#to-date');
+        dateField1 = document.querySelector('#bookings-from-date'),
+        dateField2 = document.querySelector('#bookings-to-date');
     dateField1.value = currentDate;
     dateField2.value = currentDate;
 })()
