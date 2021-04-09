@@ -18,17 +18,13 @@
     top: 0rem;
     left: 0rem;
     display: none;
-    -ms-grid-columns: 7.3% 85% 7.7%;
     grid-template-columns: 7.3% 85% 7.7%;
         grid-template-areas:
         ". . ."
         ". contact-modal ."
         ". . .";
-    -ms-grid-rows: 15% 70% 15%;
     grid-template-rows: 15% 70% 15%;
     place-content: center center;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
     z-index: 15;
 }
@@ -39,15 +35,11 @@
 
 .container-contact {
     position: absolute;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
         grid-template-areas:
         "contact-header"
         "footer";
-    -ms-grid-rows: (min-content)[2];
-    grid-template-rows: repeat(2, -webkit-min-content);
     grid-template-rows: repeat(2, min-content);
     background-color: #f2f0e5;
     width: 100%;
@@ -56,11 +48,7 @@
 }
 
 .container-contact-header {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: contact-header;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(81, 232, 159, 0.7)), to(rgba(81, 232, 159, 0.7))), url("../img/poolside-using-smart-phone.jpg");
-    background-image: -o-linear-gradient(rgba(81, 232, 159, 0.7), rgba(81, 232, 159, 0.7)), url("../img/poolside-using-smart-phone.jpg");
     background-image: linear-gradient(rgba(81, 232, 159, 0.7), rgba(81, 232, 159, 0.7)), url("../img/poolside-using-smart-phone.jpg");
     background-size: cover;
     background-position: center;
@@ -69,16 +57,13 @@
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
         grid-template-areas:
         ". . ."
         ". headr ."
         ". cntct ."
         ". . .";
-    -ms-grid-rows: 6% 35% 45% 14%;
     grid-template-rows: 6% 35% 45% 14%;
     justify-items: center;
 }
@@ -90,38 +75,26 @@
 
 .modal-contact-box,
 #modal-contact-box {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
     grid-area: contact-modal;
     background: rgba(6, 101, 162, 0.85);
     height: 35vh;
     display: none;
-    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
         grid-template-areas:
         "txt-contact-modal"
         "btn-contact-modal";
-    -ms-grid-rows: 75% 25%;
     grid-template-rows: 75% 25%;
     border: 0.3rem solid #9095f0;
     border-radius: 1.5rem;;
     overflow: hidden;
-    -ms-grid-row-align: center;
-    -ms-grid-column-align: center;
     place-self: center;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
     margin-bottom: 2.5rem;
     z-index: 20;
 }
 
 .modal-contact-txt {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: txt-contact-modal;
-    -ms-grid-row-align: center;
-    -ms-grid-column-align: center;
     place-self: center center;
 }
 
@@ -133,11 +106,7 @@
 }
 
 .modal-contact-btn {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
     grid-area: btn-contact-modal;
-    -ms-grid-row-align: start;
-    -ms-grid-column-align: center;
     place-self: start center;
 }
 
@@ -156,8 +125,6 @@
 /**********************************-***********************************/
 
 .contact-header {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
     grid-area: headr;
     background: rgba(0, 177, 92, 0.65);
     border-radius: 0.7rem 0.7rem 0rem 0rem;
@@ -182,14 +149,11 @@
 }
 
 .contact-form {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
     grid-area: cntct;
     background: rgba(0, 177, 92, 0.65);
     border-radius: 0rem 0rem 0.7rem 0.7rem;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
         grid-template-areas:
         "frst"
@@ -197,7 +161,6 @@
         "phon"
         "mail"
         "cmnt";
-    -ms-grid-rows: (min-content)[5];
     grid-template-rows: repeat(5, -webkit-min-content);
     grid-template-rows: repeat(5, min-content);
     text-align: center;
@@ -213,34 +176,6 @@
     margin: 0.3rem 0rem;
 }
 
-.input-contact-defaults::-webkit-input-placeholder {
-    color: #fff2cc;
-    font-family: 'Architects Daughter', sans-serif;
-    font-weight: 400;
-    padding: 0rem 0.3rem;
-}
-
-.input-contact-defaults::-moz-placeholder {
-    color: #fff2cc;
-    font-family: 'Architects Daughter', sans-serif;
-    font-weight: 400;
-    padding: 0rem 0.3rem;
-}
-
-.input-contact-defaults:-ms-input-placeholder {
-    color: #fff2cc;
-    font-family: 'Architects Daughter', sans-serif;
-    font-weight: 400;
-    padding: 0rem 0.3rem;
-}
-
-.input-contact-defaults::-ms-input-placeholder {
-    color: #fff2cc;
-    font-family: 'Architects Daughter', sans-serif;
-    font-weight: 400;
-    padding: 0rem 0.3rem;
-}
-
 .input-contact-defaults::placeholder {
     color: #fff2cc;
     font-family: 'Architects Daughter', sans-serif;
@@ -250,30 +185,6 @@
 
 .contact-inputs textarea {
     height: 6rem;
-}
-
-.contact-inputs textarea::-webkit-input-placeholder {
-    font-family: 'Architects Daughter', sans-serif;
-    font-weight: 400;
-    font-size: 101%;
-}
-
-.contact-inputs textarea::-moz-placeholder {
-    font-family: 'Architects Daughter', sans-serif;
-    font-weight: 400;
-    font-size: 101%;
-}
-
-.contact-inputs textarea:-ms-input-placeholder {
-    font-family: 'Architects Daughter', sans-serif;
-    font-weight: 400;
-    font-size: 101%;
-}
-
-.contact-inputs textarea::-ms-input-placeholder {
-    font-family: 'Architects Daughter', sans-serif;
-    font-weight: 400;
-    font-size: 101%;
 }
 
 .contact-inputs textarea::placeholder {
@@ -299,7 +210,6 @@
     /***********************/
 
     .container-contact-header {
-        -ms-grid-rows: 15% 30% 50% 5%;
         grid-template-rows: 15% 30% 50% 5%;
     }
 }
@@ -314,9 +224,7 @@
     /***********************/
 
     .container-contact-header {
-        -ms-grid-columns: 15% 70% 15%;
         grid-template-columns: 15% 70% 15%;
-        -ms-grid-rows: 25% 15% 35% 25%;
         grid-template-rows: 25% 15% 35% 25%;
     }
 
@@ -393,44 +301,12 @@
         margin: 0.4rem 0rem;
     }
 
-    .input-contact-defaults::-webkit-input-placeholder {
-        font-size: 1.5rem;
-    }
-
-    .input-contact-defaults::-moz-placeholder {
-        font-size: 1.5rem;
-    }
-
-    .input-contact-defaults:-ms-input-placeholder {
-        font-size: 1.5rem;
-    }
-
-    .input-contact-defaults::-ms-input-placeholder {
-        font-size: 1.5rem;
-    }
-
     .input-contact-defaults::placeholder {
         font-size: 1.5rem;
     }
 
     .contact-inputs textarea {
         height: 8rem;
-    }
-
-    .contact-inputs textarea::-webkit-input-placeholder {
-        font-size: 1.5rem;
-    }
-
-    .contact-inputs textarea::-moz-placeholder {
-        font-size: 1.5rem;
-    }
-
-    .contact-inputs textarea:-ms-input-placeholder {
-        font-size: 1.5rem;
-    }
-
-    .contact-inputs textarea::-ms-input-placeholder {
-        font-size: 1.5rem;
     }
 
     .contact-inputs textarea::placeholder {
@@ -448,9 +324,7 @@
     /***********************/
 
     .container-contact-header {
-        -ms-grid-columns: 20% 60% 20%;
         grid-template-columns: 20% 60% 20%;
-        -ms-grid-rows: 30% 10% 30% 30%;
         grid-template-rows: 30% 10% 30% 30%;
     }
 
@@ -526,22 +400,6 @@
         height: 2.9rem;
     }
 
-    .input-contact-defaults::-webkit-input-placeholder {
-        font-size: 1.5rem;
-    }
-
-    .input-contact-defaults::-moz-placeholder {
-        font-size: 1.5rem;
-    }
-
-    .input-contact-defaults:-ms-input-placeholder {
-        font-size: 1.5rem;
-    }
-
-    .input-contact-defaults::-ms-input-placeholder {
-        font-size: 1.5rem;
-    }
-
     .input-contact-defaults::placeholder {
         font-size: 1.5rem;
     }
@@ -561,7 +419,6 @@
     /***********************/
 
     .container-contact-header {
-        -ms-grid-rows: 20% 15% 50% 15%;
         grid-template-rows: 20% 15% 50% 15%;
     }
 
@@ -575,22 +432,6 @@
 
     .input-contact-defaults {
         height: 2.9rem;
-    }
-
-    .input-contact-defaults::-webkit-input-placeholder {
-        font-size: 1.5rem;
-    }
-
-    .input-contact-defaults::-moz-placeholder {
-        font-size: 1.5rem;
-    }
-
-    .input-contact-defaults:-ms-input-placeholder {
-        font-size: 1.5rem;
-    }
-
-    .input-contact-defaults::-ms-input-placeholder {
-        font-size: 1.5rem;
     }
 
     .input-contact-defaults::placeholder {
@@ -612,7 +453,6 @@
     /***********************/
 
     .container-contact-header {
-        -ms-grid-rows: 20% 15% 45% 20%;
         grid-template-rows: 20% 15% 45% 20%;
     }
 
@@ -635,9 +475,7 @@
     /***********************/
 
     .container-contact-header {
-        -ms-grid-columns: 30% 40% 30%;
         grid-template-columns: 30% 40% 30%;
-        -ms-grid-rows: 20% 15% 40% 25%;
         grid-template-rows: 20% 15% 40% 25%;
     }
 
@@ -720,9 +558,7 @@
     /***********************/
 
     .container-contact-header {
-        -ms-grid-columns: 30% 40% 30%;
         grid-template-columns: 30% 40% 30%;
-        -ms-grid-rows: 20% 15% 40% 25%;
         grid-template-rows: 20% 15% 40% 25%;
     }
 
