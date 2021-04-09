@@ -12,7 +12,7 @@
         dateField2 = document.querySelector('#bookings-to-date');
     dateField1.value = currentDate;
     dateField2.value = currentDate;
-})()
+})();
 
 
 /**********************************************************************/
