@@ -1208,7 +1208,6 @@ body {
             grid-template-areas:
             "start middle end"
             ". copy .";
-        -ms-grid-rows: ()[2, max-content];
         grid-template-rows: repeat(2, -webkit-max-content);
         grid-template-rows: repeat(2, max-content);
     }
@@ -1488,7 +1487,6 @@ body {
             grid-template-areas:
             "start middle end"
             ". copy .";
-        -ms-grid-rows: ()[2, max-content];
         grid-template-rows: repeat(2, -webkit-max-content);
         grid-template-rows: repeat(2, max-content);
     }
